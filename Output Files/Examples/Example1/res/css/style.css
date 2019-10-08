@@ -1,0 +1,11 @@
+#paragraph {
+font-size : 32.0px;
+color : #0000FF;
+}
+.heading {
+color : #00BFFF;
+font-family : Courier;
+font-size : 40.0px;
+font-weight : 300;
+text-align : Center;
+}
