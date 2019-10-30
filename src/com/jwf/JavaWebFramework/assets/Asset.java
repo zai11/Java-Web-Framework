@@ -11,9 +11,11 @@ import com.jwf.JavaWebFramework.styling.Class;
  * All assets will inherit from this class.
  */
 public abstract class Asset {
+
+	public AssetType assetType;
 	
-	protected List<Class> classes = new ArrayList<Class>();
-	protected ID id;
+	public List<Class> classes = new ArrayList<Class>();
+	public ID id;
 	
 	public abstract String buildLine();
 	

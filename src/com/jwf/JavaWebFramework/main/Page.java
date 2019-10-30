@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.assets.AssetType;
 import com.jwf.JavaWebFramework.styling.Stylesheet;
+import com.jwf.JavaWebFramework.styling.Class;
 
 /**
  * An object representation of a HTML webpage.
@@ -14,10 +16,10 @@ import com.jwf.JavaWebFramework.styling.Stylesheet;
  */
 public class Page {
 
-	private List<Asset> assets = new ArrayList<Asset>();
+	private List<Asset> assets = new ArrayList<>();
 	private String name;
 	private String title;
-	private Stylesheet stylesheet;
+	private List<Stylesheet> stylesheets = new ArrayList<>();
 	
 	/**
 	 * Constructs a page using the given parameters.
@@ -80,15 +82,27 @@ public class Page {
 	 * Adds a stylesheet to the page.
 	 * @param style the new stylesheet
 	 */
-	public void setStyle(Stylesheet style) {
-		stylesheet = style;
+	public void addStyle(Stylesheet style) {
+		stylesheets.add(style);
 	}
 	
 	/**
 	 * Gets the current stylesheet attached to the page.
 	 * @return the stylesheet
 	 */
-	public Stylesheet getStyle() {
-		return stylesheet;
+	public List<Stylesheet> getStyles() {
+		return stylesheets;
+	}
+	
+	public Asset findAsset(AssetType type, String cl) {
+		for (Asset asset : assets) {
+			if (type == asset.assetType) {
+				for (Class c : asset.classes) {
+					if (c.getName() == cl)
+						return asset;
+				}
+			}
+		}
+		return null;
 	}
 }

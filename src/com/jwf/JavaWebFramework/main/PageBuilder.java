@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 import org.apache.commons.io.FileUtils;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.styling.Stylesheet;
 
 /**
  * Builds the website.
@@ -38,16 +39,13 @@ public class PageBuilder {
 	 * @throws UnsupportedEncodingException
 	 */
 	public void build() throws FileNotFoundException, UnsupportedEncodingException {
-		System.out.println("Made it here!");
 		if (SiteConfig.CLEAR_OUTPUT_DIR)
 			deleteOutputDir(new File(OUTPUT_PATH));
 		buildDirectories();
 		copyInputFiles();
-		System.out.println(website.pages.size());
 		for (Page page : website.pages) {
 			File file = new File(
 					OUTPUT_PATH + SiteConfig.NAME + '\\' + page.getName() + "." + SiteConfig.EXTENSION);
-			System.out.println("Path: " + file.getAbsolutePath().toString());
 			file.getParentFile().mkdirs();
 			PrintWriter writer = new PrintWriter(file, "UTF-8");
 			printHead(writer, page);
@@ -79,9 +77,11 @@ public class PageBuilder {
 		writer.println("<!DOCTYPE html>");
 		writer.println("<html>");
 		writer.println("<head>");
-		if (page.getStyle() != null) {
-			writer.println(
-					"<link rel='stylesheet' type='text/css' href='res/css/" + page.getStyle().getName() + ".css'>");
+		if (page.getStyles() != null) {
+			for (Stylesheet style : page.getStyles()) {
+				writer.println(
+						"<link rel='stylesheet' type='text/css' href='res/css/" + style.getName() + ".css'>");
+			}
 		}
 		writer.println("<title>" + page.getTitle() + "</title>");
 		writer.println("</head>");

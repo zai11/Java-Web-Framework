@@ -24,13 +24,17 @@ com\jwf\JavaWebFramework\assets\LinkBuilder.class
 com\jwf\JavaWebFramework\main\JWF.class
 com\jwf\JavaWebFramework\assets\form\SelectBoxBuilder.class
 com\jwf\JavaWebFramework\assets\form\Form.class
+com\jwf\JavaWebFramework\js\builder\PrimitiveVariable.class
 com\jwf\JavaWebFramework\assets\form\OptionGroup.class
 com\jwf\JavaWebFramework\styling\IDList.class
+com\jwf\JavaWebFramework\assets\AssetType.class
 com\jwf\JavaWebFramework\assets\form\FormBuilder.class
 com\jwf\JavaWebFramework\main\Website.class
 com\jwf\JavaWebFramework\styling\ClassList.class
 com\jwf\JavaWebFramework\assets\Heading.class
+com\jwf\JavaWebFramework\misc\testing\Logging.class
 com\jwf\JavaWebFramework\assets\Block.class
+com\jwf\JavaWebFramework\js\builder\JSFile.class
 com\jwf\JavaWebFramework\assets\form\OptionBuilder.class
 com\jwf\JavaWebFramework\assets\HeadingBuilder.class
 com\jwf\JavaWebFramework\styling\ID.class
@@ -42,6 +46,7 @@ com\jwf\JavaWebFramework\assets\HorizontalLine.class
 com\jwf\JavaWebFramework\assets\Image.class
 com\jwf\JavaWebFramework\assets\ImageBuilder.class
 com\jwf\JavaWebFramework\styling\IDBuilder.class
+com\jwf\JavaWebFramework\js\builder\JSBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSet.class
 com\jwf\JavaWebFramework\assets\form\Button.class

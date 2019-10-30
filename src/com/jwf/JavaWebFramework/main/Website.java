@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.main;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jwf.JavaWebFramework.js.builder.JSFile;
 import com.jwf.JavaWebFramework.styling.Stylesheet;
 
 /**
@@ -10,8 +11,9 @@ import com.jwf.JavaWebFramework.styling.Stylesheet;
  */
 public class Website {
 
-	public List<Page> pages = new ArrayList<Page>();
-	public List<Stylesheet> stylesheets = new ArrayList<Stylesheet>();
+	public List<Page> pages = new ArrayList<>();
+	public List<Stylesheet> stylesheets = new ArrayList<>();
+	public List<JSFile> jsFiles = new ArrayList<>();
 	
 	public Website() {}
 	
@@ -21,5 +23,9 @@ public class Website {
 	
 	public void addPage(Page page) {
 		this.pages.add(page);
+	}
+	
+	public void addJSFile(JSFile jsFile) {
+		this.jsFiles.add(jsFile);
 	}
 }

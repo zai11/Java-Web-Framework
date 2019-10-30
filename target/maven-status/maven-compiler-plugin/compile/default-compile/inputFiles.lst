@@ -1,52 +1,57 @@
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Image.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Size.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionGroup.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Comment.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\ConfigParser.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Paragraph.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FormBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\LabelBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\CommentBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBoxBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Page.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HeadingBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ParagraphBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HorizontalLine.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\StyleBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\IDList.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\InputBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ID.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Asset.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Input.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Form.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Label.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBox.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassList.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\ButtonBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\SiteConfig.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LinkBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Stylesheet.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\BlockBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Website.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\IDBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FieldSet.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionGroupBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\JWF.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Test.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Heading.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreakBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Button.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Builder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreak.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Attribute.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Block.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\PageBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Rectangle.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ImageBuilder.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Link.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Option.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Class.java
-D:\My_Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\AssetType.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionGroup.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ParagraphBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FieldSet.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Website.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Builder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HeadingBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LinkBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HorizontalLine.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassList.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Stylesheet.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FormBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Page.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Block.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Class.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Link.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Comment.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBoxBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\PrimitiveVariable.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\ConfigParser.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\BlockBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ID.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\ButtonBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\InputBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Image.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Size.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\LabelBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Test.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Button.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Form.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Input.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\SiteConfig.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Label.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreakBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Rectangle.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Attribute.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreak.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\testing\Logging.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ImageBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\CommentBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBox.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Asset.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\IDBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Option.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionGroupBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Heading.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSFile.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\JWF.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\PageBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Paragraph.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\StyleBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\IDList.java
