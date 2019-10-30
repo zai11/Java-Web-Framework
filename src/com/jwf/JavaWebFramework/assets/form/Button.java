@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.assets.AssetType;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -13,7 +14,8 @@ import com.jwf.JavaWebFramework.styling.Class;
  * @see Form
  */
 public class Button extends Asset {
-
+	
+	AssetType assetType = AssetType.BUTTON;
 	String type;
 	String text;
 	String name;

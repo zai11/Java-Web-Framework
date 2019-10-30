@@ -31,7 +31,7 @@ public class Test {
 		Page page = new Page("first-page");
 		JWF.WEBSITE.addPage(page);
 		page.setTitle("Home");
-		page.setStyle(style);
+		page.addStyle(style);
 
 		HeadingBuilder hb = new HeadingBuilder();
 		hb.setSize(1).setText("Test Heading").addClass(classBuilder.buildClass());

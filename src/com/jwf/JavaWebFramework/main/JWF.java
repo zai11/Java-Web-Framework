@@ -10,7 +10,6 @@ public class JWF {
 
 	public static final Website WEBSITE = new Website();
 	
-	// The main method. Creates the website and builds the pages and styles.
 	public static void build() throws FileNotFoundException, UnsupportedEncodingException {
 		ConfigParser cp = new ConfigParser(WEBSITE, "website.conf");
 		cp.parse();
