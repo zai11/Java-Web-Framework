@@ -3,8 +3,9 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.js.builder.Statement;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * An abstract representation of an Asset.
@@ -18,5 +19,9 @@ public abstract class Asset {
 	public ID id;
 	
 	public abstract String buildLine();
+	
+	public Asset setInnerHTML(String html) {
+		return this;
+	}
 	
 }

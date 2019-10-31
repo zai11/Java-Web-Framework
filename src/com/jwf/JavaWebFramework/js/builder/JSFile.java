@@ -3,19 +3,14 @@ package com.jwf.JavaWebFramework.js.builder;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jwf.JavaWebFramework.assets.Asset;
-import com.jwf.JavaWebFramework.assets.AssetType;
-import com.jwf.JavaWebFramework.main.Page;
-
 public class JSFile {
 
-	Page parent;
 	private String name;
 	List<PrimitiveVariable<?>> variables = new ArrayList<>();
+	List<Statement> statements = new ArrayList<>();
 	
-	public JSFile(Page parent, String name) {
+	public JSFile(String name) {
 		this.name = name;
-		this.parent = parent;
 	}
 	
 	public String getName() {
@@ -26,20 +21,15 @@ public class JSFile {
 		this.name = name;
 	}
 	
-	public Asset selectAsset(AssetType type, String cl) {
-		Asset asset = parent.findAsset(type, cl);
-		return asset;
-	}
-	
-	public void addVariable() {
-		
+	public void addVariable(PrimitiveVariable<?> var) {
+		this.variables.add(var);
 	}
 	
 	public List<PrimitiveVariable<?>> getVariables() {
 		return variables;
 	}
 	
-	public PrimitiveVariable<?> getVariable(String name) {
+	public PrimitiveVariable<?> findVariable(String name) {
 		for (PrimitiveVariable<?> variable : variables) {
 			if (variable.name.equals(name)) {
 				return variable;
@@ -48,4 +38,13 @@ public class JSFile {
 		System.out.println("[!] Error: could not find variable: " + name);
 		return null;
 	}
+	
+	public void addStatement(Statement statement) {
+		this.statements.add(statement);
+	}
+	
+	public List<Statement> getStatements() {
+		return statements;
+	}
+	
 }
