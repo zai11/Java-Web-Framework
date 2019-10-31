@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
 /**
@@ -36,7 +37,7 @@ public class Link extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Link...");
+		Logging.LogComment("Creating Link...");
 		String line = "<a";
 		if (classes != null) {
 			line += " class='";
@@ -48,7 +49,6 @@ public class Link extends Asset {
 		if (id != null)
 			line += " id='" + id.getName() + "'";
 		line += " href='" + address + "'>" + text + "</a>";
-		System.out.println("Done!");
 		return line;
 	}
 }

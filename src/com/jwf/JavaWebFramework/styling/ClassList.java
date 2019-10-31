@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.jwf.JavaWebFramework.misc.testing.Logging;
+
 /**
  * An iterable list of CSS classes.
  */
@@ -34,7 +36,7 @@ public class ClassList implements Iterable<Class> {
 			if (c.getName().equals(name))
 				return c;
 		}
-		System.err.println("Error: Unable to find class " + name);
+		Logging.LogError("Unable to find class name: " + name + ".");
 		return null;
 	}
 

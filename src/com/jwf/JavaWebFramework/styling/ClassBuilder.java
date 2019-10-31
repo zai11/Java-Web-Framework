@@ -21,6 +21,7 @@ import org.xml.sax.SAXException;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 
 public class ClassBuilder extends Builder<Class> {
 
@@ -83,7 +84,7 @@ public class ClassBuilder extends Builder<Class> {
 			value = colours.get(key.toLowerCase());
 			return value;
 		}
-		System.err.println("Error: Unable to find the colour " + key);
+		Logging.LogError("Unable to find the colour key: " + key + ".");
 		return null;
 	}
 	

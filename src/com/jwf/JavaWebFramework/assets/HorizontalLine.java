@@ -1,14 +1,15 @@
 package com.jwf.JavaWebFramework.assets;
 
+import com.jwf.JavaWebFramework.misc.testing.Logging;
+
 public class HorizontalLine extends Asset {
 
 	public HorizontalLine() {}
 	
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Horizontal Line...");
+		Logging.LogComment("Creating Horizontal Line...");
 		String line = "<hr />";
-		System.out.println("Done!");
 		return line;
 	}
 

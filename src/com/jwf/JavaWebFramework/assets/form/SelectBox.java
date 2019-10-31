@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -38,7 +39,7 @@ public class SelectBox extends Asset {
 	
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Select Box...");
+		Logging.LogComment("Creating Select Box...");
 		String line = "<select";
 		if (classes != null) {
 			line += " class='";
@@ -65,7 +66,6 @@ public class SelectBox extends Asset {
 			line += " name='" + name + "'";
 		line += ">";
 		line += "</select>";
-		System.out.println("Done!");
 		return line;
 	}
 }

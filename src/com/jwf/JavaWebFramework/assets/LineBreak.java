@@ -1,14 +1,15 @@
 package com.jwf.JavaWebFramework.assets;
 
+import com.jwf.JavaWebFramework.misc.testing.Logging;
+
 public class LineBreak extends Asset {
 
 	public LineBreak() {}
 	
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Comment...");
+		Logging.LogComment("Creating Line Break...");
 		String line = "<br />";
-		System.out.println("Done!");
 		return line;
 	}
 

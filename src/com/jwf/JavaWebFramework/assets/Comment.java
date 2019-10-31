@@ -1,5 +1,7 @@
 package com.jwf.JavaWebFramework.assets;
 
+import com.jwf.JavaWebFramework.misc.testing.Logging;
+
 public class Comment extends Asset {
 
 	private String text;
@@ -10,9 +12,8 @@ public class Comment extends Asset {
 
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Comment...");
+		Logging.LogComment("Creating Comment...");
 		String line = "<!-- " + text + " -->";
-		System.out.println("Done!");
 		return line;
 	}
 }

@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -44,7 +45,7 @@ public class Input extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Input...");
+		Logging.LogComment("Creating Input...");
 		String line = "<input";
 		if (classes != null) {
 			line += " class='";
@@ -60,7 +61,6 @@ public class Input extends Asset {
 		if (!name.isEmpty())
 			line += " name='" + name + "'";
 		line += " type='" + type + "' >" + text + "</button>";
-		System.out.println("Done!");
 		return line;
 	}
 }

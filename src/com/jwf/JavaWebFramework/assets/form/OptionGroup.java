@@ -3,10 +3,10 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
-// TODO: Add in comments for OptionGroup
 /**
  * Used to group related Options in a drop-down list - equivalent to the HTML {@code <optgroup>} tags.
  * See <a href=
@@ -33,7 +33,7 @@ public class OptionGroup extends Asset {
 
 	@Override
 	public String buildLine() {
-		System.out.println("Creating OptionGroup...");
+		Logging.LogComment("Creating Option Group...");
 		String line = "<optgroup";
 		if (classes != null) {
 			line += " class='";
@@ -53,7 +53,6 @@ public class OptionGroup extends Asset {
 			line += child.buildLine() + "\n";
 		}
 		line += "</optgroup>";
-		System.out.println("Done!");
 		return line;
 	}
 }

@@ -4,8 +4,9 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.AssetType;
-import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A button for a form - equivalent to the HTML {@code <button>} tags.
@@ -46,7 +47,7 @@ public class Button extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Button...");
+		Logging.LogComment("Creating Button...");
 		String line = "<button";
 		if (classes != null) {
 			line += " class='";
@@ -60,7 +61,6 @@ public class Button extends Asset {
 		if (disabled)
 			line += " disabled='disabled'";
 		line += " type='" + type + "' >" + text + "</button>";
-		System.out.println("Done!");
 		return line;
 	}
 }

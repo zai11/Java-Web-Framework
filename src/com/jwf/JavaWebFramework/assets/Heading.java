@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
 /**
@@ -29,7 +30,7 @@ public class Heading extends Asset {
 	 */
 	public Heading(String text, int size, ID id, List<Class> classes) {
 		if (!checkSize(size)) {
-			System.err.println("Error: Invalid heading size.");
+			Logging.LogError("Invalid heading size.");
 			return;
 		}
 		this.text = text;
@@ -54,7 +55,7 @@ public class Heading extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Heading...");
+		Logging.LogComment("Creating Heading...");
 		String line = "<h" + size;
 		if (classes != null) {
 			line += " class='";
@@ -66,7 +67,6 @@ public class Heading extends Asset {
 		if (id != null)
 			line += " id='"+ id.getName() + "'";
 		line += ">"+ text +"</h"+ size +">";
-		System.out.println("Done!");
 		return line;	
 	}
 }

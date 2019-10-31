@@ -3,10 +3,9 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
-
-// TODO: Add in comments for option
 
 /**
  * An Option for a Select Box - equivalent to the HTML {@code <option>} tags.
@@ -51,7 +50,7 @@ public class Option extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Option...");
+		Logging.LogComment("Creating Option...");
 		String line = "<option";
 		if (classes != null) {
 			line += " class='";
@@ -69,7 +68,6 @@ public class Option extends Asset {
 		if (disabled)
 			line += " disabled";
 		line += ">" + value + "</option>";
-		System.out.println("Done!");
 		return line;
 	}
 }

@@ -3,7 +3,6 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jwf.JavaWebFramework.js.builder.Statement;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
 
@@ -12,7 +11,7 @@ import com.jwf.JavaWebFramework.styling.ID;
  * All assets will inherit from this class.
  */
 public abstract class Asset {
-
+	
 	public AssetType assetType;
 	
 	public List<Class> classes = new ArrayList<Class>();

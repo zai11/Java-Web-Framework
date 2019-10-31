@@ -3,6 +3,8 @@ package com.jwf.JavaWebFramework.js.builder;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jwf.JavaWebFramework.misc.testing.Logging;
+
 public class JSFile {
 
 	private String name;
@@ -35,7 +37,7 @@ public class JSFile {
 				return variable;
 			}
 		}
-		System.out.println("[!] Error: could not find variable: " + name);
+		Logging.LogError("Could not find variable: " + name + ".");
 		return null;
 	}
 	

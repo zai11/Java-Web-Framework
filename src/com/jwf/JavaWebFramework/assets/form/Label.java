@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -32,7 +33,7 @@ public class Label extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Label...");
+		Logging.LogComment("Creating Label...");
 		String line = "<label";
 		if (classes != null) {
 			line += " class='";
@@ -45,7 +46,6 @@ public class Label extends Asset {
 			line += " id='" + id.getName() + "'";
 		line += " for='" + parent + "'";
 		line += ">" + text + "</label>";
-		System.out.println("Done!");
 		return line;
 	}
 }

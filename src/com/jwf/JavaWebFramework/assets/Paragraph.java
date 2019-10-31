@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
 /**
@@ -33,7 +34,7 @@ public class Paragraph extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Paragraph...");
+		Logging.LogComment("Creating Paragraph...");
 		String line = "<p";
 		if (classes != null) {
 			line += " class='";
@@ -45,7 +46,6 @@ public class Paragraph extends Asset {
 		if (id != null)
 			line += " id='"+ id.getName() + "'";
 		line += ">" + text + "</p>";
-		System.out.println("Done!");
 		return line;
 	}
 }

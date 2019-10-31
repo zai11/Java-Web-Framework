@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -36,7 +37,7 @@ public class FieldSet extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Field Set...");
+		Logging.LogComment("Creating Field Set...");
 		String line = "<fieldset";
 		if (classes != null) {
 			line += " class='";
@@ -52,7 +53,6 @@ public class FieldSet extends Asset {
 			line += child.buildLine() + "\n";
 		}
 		line += "</fieldset>";
-		System.out.println("Done!");
 		return line;
 	}
 }

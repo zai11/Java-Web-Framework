@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
 /**
@@ -34,7 +35,7 @@ public class Block extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Block...");
+		Logging.LogComment("Creating Block...");
 		String line = "<div";
 		if (classes != null) {
 			line += " class='";
@@ -50,7 +51,6 @@ public class Block extends Asset {
 			line += child.buildLine() + "\n";
 		}
 		line += "</div>";
-		System.out.println("Done!");
 		return line;
 	}
 }

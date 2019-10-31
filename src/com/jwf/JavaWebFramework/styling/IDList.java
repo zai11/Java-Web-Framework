@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.jwf.JavaWebFramework.misc.testing.Logging;
+
 /**
  * An iterable list of CSS IDs.
  */
@@ -34,7 +36,7 @@ public class IDList implements Iterable<ID> {
 			if (id.getName().equals(name))
 				return id;
 		}
-		System.err.println("Error: Unable to find id " + name);
+		Logging.LogError("Error: Unable to find id: " + name + ".");
 		return null;
 	}
 

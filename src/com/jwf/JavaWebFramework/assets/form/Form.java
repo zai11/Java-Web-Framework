@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Block;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -37,7 +38,7 @@ public class Form extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Form...");
+		Logging.LogComment("Creating Form...");
 		String line = "<form";
 		if (classes != null) {
 			line += " class='";
@@ -53,7 +54,6 @@ public class Form extends Asset {
 			line += child.buildLine() + "\n";
 		}
 		line += "</form>";
-		System.out.println("Done!");
 		return line;
 	}
 }

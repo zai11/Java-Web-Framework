@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
 /**
@@ -36,7 +37,7 @@ public class Image extends Asset {
 	 */
 	@Override
 	public String buildLine() {
-		System.out.println("Creating Image...");
+		Logging.LogComment("Creating Image...");
 		String line = "<img";
 		if (classes != null) {
 			line += " class='";
@@ -48,7 +49,6 @@ public class Image extends Asset {
 		if (id != null)
 			line += " id='" + id.getName() + "'";
 		line += " src='" + IMAGES_PATH + src + "' alt='" + alt + "' />";
-		System.out.println("Done!");
 		return line;
 	}
 }

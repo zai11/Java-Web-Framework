@@ -8,6 +8,7 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.main.SiteConfig;
 import com.jwf.JavaWebFramework.main.Website;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 
 public class ConfigParser {
 
@@ -31,7 +32,7 @@ public class ConfigParser {
 			}
 			br.close();
 		} catch (Exception e) {
-			System.out.println("[?] Warning: Unable to find config file: " + address);
+			Logging.LogWarning("Unable to find config file at: " + address + ".");
 		}
 	}
 
