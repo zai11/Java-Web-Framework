@@ -16,34 +16,41 @@ public class StyleBuilder {
 
 	private Website website;
 	private final String OUTPUT_PATH = Paths.get(".").toAbsolutePath().normalize().toString() + "/Output Files/";
-	
+
 	/**
 	 * Constructs the stylebuilder object using the given parameters.
+	 * 
 	 * @param website the website to build
 	 */
 	public StyleBuilder(Website website) {
 		this.website = website;
 	}
-	
+
 	/**
 	 * Builds the stylesheets
+	 * 
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
 	 */
-	public void build() throws FileNotFoundException, UnsupportedEncodingException {
+	public void build() {
 		for (Stylesheet style : website.stylesheets) {
 			File file = new File(OUTPUT_PATH + '/' + SiteConfig.NAME + "/res/css/" + style.getName() + ".css");
 			file.getParentFile().mkdirs();
-			PrintWriter writer = new PrintWriter(file, "UTF-8");
-			writeIds(writer, style);
-			writeClasses(writer, style);
-			writer.close();
+			try {
+				PrintWriter writer = new PrintWriter(file, "UTF-8");
+				writeIds(writer, style);
+				writeClasses(writer, style);
+				writer.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
-		
+
 	}
-	
+
 	/**
 	 * Write the IDs.
+	 * 
 	 * @param writer the PrintWriter object
 	 * @param style  the stylesheet
 	 */
@@ -56,9 +63,10 @@ public class StyleBuilder {
 			writer.println("}");
 		}
 	}
-	
+
 	/**
 	 * Write the classes.
+	 * 
 	 * @param writer the PrintWriter object
 	 * @param style  the stylesheet
 	 */
@@ -71,5 +79,5 @@ public class StyleBuilder {
 			writer.println("}");
 		}
 	}
-	
+
 }

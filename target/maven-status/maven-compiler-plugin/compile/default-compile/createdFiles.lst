@@ -1,4 +1,5 @@
 com\jwf\JavaWebFramework\assets\Comment.class
+com\jwf\JavaWebFramework\js\builder\statements\Assignment.class
 com\jwf\JavaWebFramework\assets\ParagraphBuilder.class
 com\jwf\JavaWebFramework\styling\Class.class
 com\jwf\JavaWebFramework\assets\LineBreakBuilder.class
@@ -6,6 +7,8 @@ com\jwf\JavaWebFramework\main\PageBuilder.class
 com\jwf\JavaWebFramework\assets\form\InputBuilder.class
 com\jwf\JavaWebFramework\styling\ClassBuilder.class
 com\jwf\JavaWebFramework\assets\form\Option.class
+com\jwf\JavaWebFramework\js\builder\statements\FunctionDeclaration.class
+com\jwf\JavaWebFramework\js\builder\statements\FunctionCall.class
 com\jwf\JavaWebFramework\main\SiteConfig.class
 com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.class
 com\jwf\JavaWebFramework\assets\LineBreak.class
@@ -15,6 +18,7 @@ com\jwf\JavaWebFramework\assets\form\Input.class
 com\jwf\JavaWebFramework\assets\form\LabelBuilder.class
 com\jwf\JavaWebFramework\assets\Builder.class
 com\jwf\JavaWebFramework\assets\form\OptionGroupBuilder.class
+com\jwf\JavaWebFramework\js\builder\statements\Conditional.class
 com\jwf\JavaWebFramework\main\Test.class
 com\jwf\JavaWebFramework\assets\form\Label.class
 com\jwf\JavaWebFramework\main\Page.class
@@ -24,8 +28,10 @@ com\jwf\JavaWebFramework\assets\LinkBuilder.class
 com\jwf\JavaWebFramework\main\JWF.class
 com\jwf\JavaWebFramework\assets\form\SelectBoxBuilder.class
 com\jwf\JavaWebFramework\assets\form\Form.class
+com\jwf\JavaWebFramework\js\builder\statements\Terminator.class
 com\jwf\JavaWebFramework\js\builder\PrimitiveVariable.class
 com\jwf\JavaWebFramework\assets\form\OptionGroup.class
+com\jwf\JavaWebFramework\js\builder\Statement.class
 com\jwf\JavaWebFramework\styling\IDList.class
 com\jwf\JavaWebFramework\assets\AssetType.class
 com\jwf\JavaWebFramework\assets\form\FormBuilder.class
@@ -41,6 +47,8 @@ com\jwf\JavaWebFramework\styling\ID.class
 com\jwf\JavaWebFramework\styling\Attribute.class
 com\jwf\JavaWebFramework\assets\Link.class
 com\jwf\JavaWebFramework\styling\Size.class
+com\jwf\JavaWebFramework\js\builder\statements\Loop.class
+com\jwf\JavaWebFramework\js\builder\statements\Modifier.class
 com\jwf\JavaWebFramework\assets\BlockBuilder.class
 com\jwf\JavaWebFramework\assets\HorizontalLine.class
 com\jwf\JavaWebFramework\assets\Image.class
@@ -53,5 +61,6 @@ com\jwf\JavaWebFramework\assets\form\Button.class
 com\jwf\JavaWebFramework\assets\Asset.class
 com\jwf\JavaWebFramework\styling\StyleBuilder.class
 com\jwf\JavaWebFramework\assets\form\ButtonBuilder.class
+com\jwf\JavaWebFramework\js\builder\statements\Selector.class
 com\jwf\JavaWebFramework\misc\ConfigParser.class
 com\jwf\JavaWebFramework\styling\Stylesheet.class

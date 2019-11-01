@@ -1,8 +1,5 @@
 package com.jwf.JavaWebFramework.main;
 
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
-
 import com.jwf.JavaWebFramework.misc.ConfigParser;
 import com.jwf.JavaWebFramework.styling.StyleBuilder;
 
@@ -10,7 +7,7 @@ public class JWF {
 
 	public static final Website WEBSITE = new Website();
 	
-	public static void build() throws FileNotFoundException, UnsupportedEncodingException {
+	public static void build() {
 		ConfigParser cp = new ConfigParser(WEBSITE, "website.conf");
 		cp.parse();
 		PageBuilder pb = new PageBuilder(WEBSITE);

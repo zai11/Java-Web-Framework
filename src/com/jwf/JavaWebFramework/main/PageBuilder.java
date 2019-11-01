@@ -38,20 +38,23 @@ public class PageBuilder {
 	 * @throws FileNotFoundException
 	 * @throws UnsupportedEncodingException
 	 */
-	public void build() throws FileNotFoundException, UnsupportedEncodingException {
+	public void build() {
 		if (SiteConfig.CLEAR_OUTPUT_DIR)
 			deleteOutputDir(new File(OUTPUT_PATH));
 		buildDirectories();
 		copyInputFiles();
 		for (Page page : website.pages) {
-			File file = new File(
-					OUTPUT_PATH + SiteConfig.NAME + '\\' + page.getName() + "." + SiteConfig.EXTENSION);
+			File file = new File(OUTPUT_PATH + SiteConfig.NAME + '\\' + page.getName() + "." + SiteConfig.EXTENSION);
 			file.getParentFile().mkdirs();
-			PrintWriter writer = new PrintWriter(file, "UTF-8");
-			printHead(writer, page);
-			printAssets(writer, page);
-			printFoot(writer, page);
-			writer.close();
+			try {
+				PrintWriter writer = new PrintWriter(file, "UTF-8");
+				printHead(writer, page);
+				printAssets(writer, page);
+				printFoot(writer, page);
+				writer.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -79,8 +82,7 @@ public class PageBuilder {
 		writer.println("<head>");
 		if (page.getStyles() != null) {
 			for (Stylesheet style : page.getStyles()) {
-				writer.println(
-						"<link rel='stylesheet' type='text/css' href='res/css/" + style.getName() + ".css'>");
+				writer.println("<link rel='stylesheet' type='text/css' href='res/css/" + style.getName() + ".css'>");
 			}
 		}
 		writer.println("<title>" + page.getTitle() + "</title>");
@@ -108,19 +110,19 @@ public class PageBuilder {
 		File images = new File(res.getAbsolutePath() + "\\images");
 		File css = new File(res.getAbsolutePath() + "\\css");
 		File js = new File(res.getAbsolutePath() + "\\js");
-		
+
 		if (!root.exists())
 			root.mkdir();
-		
+
 		if (!res.exists() && (SiteConfig.ENABLE_CSS || SiteConfig.ENABLE_IMAGES || SiteConfig.ENABLE_JS))
 			res.mkdir();
-		
+
 		if (!images.exists() && SiteConfig.ENABLE_IMAGES)
 			images.mkdir();
-		
+
 		if (!css.exists() && SiteConfig.ENABLE_CSS)
 			css.mkdir();
-		
+
 		if (!js.exists() && SiteConfig.ENABLE_JS)
 			js.mkdir();
 	}
