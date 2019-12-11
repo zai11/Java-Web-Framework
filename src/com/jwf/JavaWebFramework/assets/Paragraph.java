@@ -44,7 +44,7 @@ public class Paragraph extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='"+ id.getName() + "'";
+			line += " id='"+ id.getValue() + "'";
 		line += ">" + text + "</p>";
 		return line;
 	}

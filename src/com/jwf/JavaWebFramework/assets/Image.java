@@ -47,7 +47,7 @@ public class Image extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		line += " src='" + IMAGES_PATH + src + "' alt='" + alt + "' />";
 		return line;
 	}

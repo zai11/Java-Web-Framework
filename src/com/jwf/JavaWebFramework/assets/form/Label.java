@@ -43,7 +43,7 @@ public class Label extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		line += " for='" + parent + "'";
 		line += ">" + text + "</label>";
 		return line;

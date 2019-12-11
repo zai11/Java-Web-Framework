@@ -49,7 +49,7 @@ public class SelectBox extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		if (size != 0)
 			line += " size='" + size + "'";
 		if (autofocus)

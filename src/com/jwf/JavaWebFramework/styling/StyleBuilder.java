@@ -56,7 +56,7 @@ public class StyleBuilder {
 	 */
 	private void writeIds(PrintWriter writer, Stylesheet style) {
 		for (ID id : style.ids) {
-			writer.println("#" + id.getName() + " {");
+			writer.println("#" + id.getValue() + " {");
 			for (Attribute a : id.getAttribs()) {
 				writer.println(a.getKey() + " : " + a.getValue() + ";");
 			}

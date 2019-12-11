@@ -60,7 +60,7 @@ public class Option extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		if (label != null)
 			line += " label='" + label + "'";
 		if (selected)

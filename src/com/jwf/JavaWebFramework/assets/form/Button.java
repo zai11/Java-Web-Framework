@@ -57,7 +57,7 @@ public class Button extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		if (disabled)
 			line += " disabled='disabled'";
 		line += " type='" + type + "' >" + text + "</button>";

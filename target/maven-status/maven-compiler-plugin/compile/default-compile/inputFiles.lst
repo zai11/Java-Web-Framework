@@ -3,8 +3,6 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ParagraphBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FieldSet.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Website.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Modifier.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Builder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HeadingBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LinkBuilder.java
@@ -13,7 +11,6 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styli
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Stylesheet.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FormBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionBuilder.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Selector.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Page.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Block.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Class.java
@@ -24,7 +21,9 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\PrimitiveVariable.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\ConfigParser.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\BlockBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ScriptBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\Statement.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Script.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ID.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\ButtonBuilder.java
@@ -34,9 +33,9 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Size.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\LabelBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\FunctionCall.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Test.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Button.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Comment.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Form.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Input.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\SiteConfig.java
@@ -45,8 +44,8 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Rectangle.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\FunctionDeclaration.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Attribute.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSFileBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreak.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Terminator.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\testing\Logging.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ImageBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\CommentBuilder.java
@@ -61,6 +60,8 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\PageBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Assignment.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Loop.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\CustomStatement.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\VariableDeclaration.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Paragraph.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\StyleBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\IDList.java

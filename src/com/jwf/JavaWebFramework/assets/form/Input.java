@@ -55,7 +55,7 @@ public class Input extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		if (required)
 			line += " required='required'";
 		if (!name.isEmpty())

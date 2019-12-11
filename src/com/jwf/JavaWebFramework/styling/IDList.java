@@ -33,7 +33,7 @@ public class IDList implements Iterable<ID> {
 	 */
 	public ID getID(String name) {
 		for (ID id : ids) {
-			if (id.getName().equals(name))
+			if (id.getValue().equals(name))
 				return id;
 		}
 		Logging.LogError("Error: Unable to find id: " + name + ".");

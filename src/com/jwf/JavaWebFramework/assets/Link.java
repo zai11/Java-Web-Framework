@@ -47,7 +47,7 @@ public class Link extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='" + id.getName() + "'";
+			line += " id='" + id.getValue() + "'";
 		line += " href='" + address + "'>" + text + "</a>";
 		return line;
 	}

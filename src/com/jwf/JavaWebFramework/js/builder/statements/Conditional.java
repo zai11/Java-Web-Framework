@@ -1,107 +1,85 @@
 package com.jwf.JavaWebFramework.js.builder.statements;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.jwf.JavaWebFramework.assets.ScriptBuilder;
+import com.jwf.JavaWebFramework.js.builder.JSFile;
 import com.jwf.JavaWebFramework.js.builder.Statement;
-import com.jwf.JavaWebFramework.misc.testing.Logging;
 
 public class Conditional extends Statement {
-
-	// TODO: This is not going to work.
-	// Fix this!!!!!!!!
 	
-	public static final int EQU = 0;
-	public static final int NEQ = 1;
-	public static final int GTR = 2;
-	public static final int LES = 3;
-	public static final int LEQ = 4;
-	public static final int GEQ = 5;
+	private String condition;
+	private List<Statement> trueStatements = new ArrayList<>();
+	private List<Statement> falseStatements = new ArrayList<>();
+	private ScriptBuilder p1;
+	private JSFile p2;
 	
-	public static final int AND = -1;
-	public static final int OR = -2;
-	public static final int NOT = -3;
-	
-	public String item1;
-	public String item2;
-	public int condition;
-	public Statement trueStatement;
-	public Statement falseStatement;
-	
-	public Conditional (String item1, String item2, int condition, Statement trueStatement) {
-		this.item1 = item1;
-		this.item2 = item2;
+	public Conditional(String condition, List<Statement> trueStatements, ScriptBuilder parent) {
 		this.condition = condition;
-		this.trueStatement = trueStatement;
-		switch (condition) {
-		case 0:
-			this.body = "if ("+ item1 + "==" + item2 +") " + trueStatement + ";";
-			break;
-		case 1:
-			this.body = "if (" + item1 + "!=" + item2 + ") " + trueStatement + ";";
-			break;
-		case 2:
-			this.body = "if (" + item1 + ">" + item2 + ") " + trueStatement + ";";
-			break;
-		case 3:
-			this.body = "if (" + item1 + "<" + item2 + ") " + trueStatement + ";";
-			break;
-		case 4:
-			this.body = "if (" + item1 + "<=" + item2 + ") " + trueStatement + ";";
-			break;
-		case 5:
-			this.body = "if (" + item1 + ">=" + item2 + ") " + trueStatement + ";";
-			break;
-		default:
-			Logging.LogError("Invalid condition code: " + condition);
-			break;
-		}
+		this.trueStatements = trueStatements;
+		this.p1 = parent;
 	}
 	
-	public Conditional (String item1, String item2, int condition, Statement trueStatement, Statement falseStatement) {
-		this.item1 = item1;
-		this.item2 = item2;
+	public Conditional(String condition, List<Statement> trueStatements, List<Statement> falseStatements, ScriptBuilder parent) {
 		this.condition = condition;
-		this.trueStatement = trueStatement;
-		this.falseStatement = falseStatement;
-		switch (condition) {
-		case 0:
-			this.body = "if ("+ item1 + "==" + item2 +") " + trueStatement + "; else " + falseStatement + ";";
-			break;
-		case 1:
-			this.body = "if (" + item1 + "!=" + item2 + ") " + trueStatement + "; else " + falseStatement + ";";
-			break;
-		case 2:
-			this.body = "if (" + item1 + ">" + item2 + ") " + trueStatement + "; else " + falseStatement + ";";
-			break;
-		case 3:
-			this.body = "if (" + item1 + "<" + item2 + ") " + trueStatement + "; else " + falseStatement + ";";
-			break;
-		case 4:
-			this.body = "if (" + item1 + "<=" + item2 + ") " + trueStatement + "; else " + falseStatement + ";";
-			break;
-		case 5:
-			this.body = "if (" + item1 + ">=" + item2 + ") " + trueStatement + "; else " + falseStatement + ";";
-			break;
-		default:
-			Logging.LogError("Invalid condition code: " + condition);
-			break;
-		}
+		this.trueStatements = trueStatements;
+		this.falseStatements = falseStatements;
+		this.p1 = parent;
 	}
 	
-	public Conditional (Conditional conditional1, Conditional conditional2, int joiner) {
-		switch (joiner) {
-		case -1:
-			break;
-		case -2:
-			break;
-		case -3:
-			break;
-		default:
-			break;
-		}
+	public Conditional(String condition, List<Statement> trueStatements, JSFile parent) {
+		this.condition = condition;
+		this.trueStatements = trueStatements;
+		this.p2 = parent;
+	}
+	
+	public Conditional(String condition, List<Statement> trueStatements, List<Statement> falseStatements, JSFile parent) {
+		this.condition = condition;
+		this.trueStatements = trueStatements;
+		this.falseStatements = falseStatements;
+		this.p2 = parent;
 	}
 
 	@Override
 	public String build() {
+		this.body = "";
+		this.condition = checkForVars(this.condition);
+		this.body += "if (" + this.condition + ") {\n";
+		for (Statement statement : this.trueStatements) {
+			this.body += "\t\t\t\t" + statement.build() + "\n";
+		}
+		this.body += "\t\t\t}";
+		if (!this.falseStatements.isEmpty()) {
+			this.body += "\t\t\telse {";
+			for (Statement statement : this.falseStatements) {
+				this.body += "\t\t\t\t" + statement.build() + "\n";
+			}
+			this.body += "\t\t\t}";
+		}
 		return this.body;
+	}
+	
+	String checkForVars(String str) {
+		String result = "";
+		String[] chunks = str.split(" ");
+		boolean found = false;
+		for (int i = 0; i < chunks.length; i++) {
+			String temp = chunks[i];
+			if (chunks[i].equals("@var")) {
+				found = true;
+				continue;
+			}
+			if (found) {
+				if (p1 != null)
+					temp = p1.findVariable(chunks[i]).getValue().toString();
+				else
+					temp = p2.findVariable(chunks[i]).getValue().toString();
+				found = false;
+			}
+			result += temp;
+		}
+		return result;
 	}
 	
 }

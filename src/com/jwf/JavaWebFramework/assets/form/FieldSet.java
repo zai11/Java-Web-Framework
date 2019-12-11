@@ -47,7 +47,7 @@ public class FieldSet extends Asset {
 			line += "'";
 		}
 		if (id != null)
-			line += " id='"+ id.getName() + "'";
+			line += " id='"+ id.getValue() + "'";
 		line += ">\n";
 		for (Asset child : children) {
 			line += child.buildLine() + "\n";

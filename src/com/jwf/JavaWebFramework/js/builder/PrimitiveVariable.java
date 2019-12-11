@@ -2,14 +2,15 @@ package com.jwf.JavaWebFramework.js.builder;
 
 public class PrimitiveVariable<E> {
 
-	String name = "";
-	E value;
+	private String name = "";
+	private Object value;
 	
 	public PrimitiveVariable(String name, E value) {
+		this.name = name;
 		this.value = value;
 	}
 	
-	public E getValue() {
+	public Object getValue() {
 		return value;
 	}
 	
@@ -17,7 +18,7 @@ public class PrimitiveVariable<E> {
 		return name;
 	}
 	
-	public void setValue(E value) {
+	public void setValue(Object value) {
 		this.value = value;
 	}
 	

@@ -5,8 +5,11 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.AssetType;
+import com.jwf.JavaWebFramework.js.builder.JSFile;
+import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Stylesheet;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * An object representation of a HTML webpage.
@@ -20,6 +23,7 @@ public class Page {
 	private String name;
 	private String title;
 	private List<Stylesheet> stylesheets = new ArrayList<>();
+	private List<JSFile> jsFiles = new ArrayList<>();
 	
 	/**
 	 * Constructs a page using the given parameters.
@@ -103,6 +107,39 @@ public class Page {
 				}
 			}
 		}
+		return null;
+	}
+	
+	public void addJSFile(JSFile jsFile) {
+		JWF.WEBSITE.jsFiles.add(jsFile);
+		this.jsFiles.add(jsFile);
+	}
+	
+	public List<JSFile> getJSFiles() {
+		return jsFiles;
+	}
+	
+	public Class findClass(String className) {
+		for (Stylesheet style : stylesheets) {
+			for (Class c : style.classes) {
+				if (c.getName() == className) {
+					return c;
+				}
+			}
+		}
+		Logging.LogError("Unable to find the class: " + className + ".");
+		return null;
+	}
+	
+	public ID findID(String idValue) {
+		for (Stylesheet style : stylesheets) {
+			for (ID id : style.ids) {
+				if (id.getValue() == idValue) {
+					return id;
+				}
+			}
+		}
+		Logging.LogError("Unable to find the id: " + idValue + ".");
 		return null;
 	}
 }

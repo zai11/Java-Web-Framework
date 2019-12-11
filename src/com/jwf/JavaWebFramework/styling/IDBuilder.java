@@ -610,7 +610,6 @@ public class IDBuilder extends Builder<ID> {
 		return this;
 	}
 	
-	// TODO: Add in anchor points to the doco to link to.
 	/**
 	 * Sets the colour of the bottom border of the element.
 	 * See <a href="../../Documentation/HTML/Styling/Attributes/Border/bottom_border.html">Documentation</a>
@@ -1197,7 +1196,6 @@ public class IDBuilder extends Builder<ID> {
 		return this;
 	}
 	
-	// TODO: Add in anchor points to the doco to link to.
 	/**
 	 * Specifies on which sides of an element floating
 	 * elements are not allowed to float.
@@ -1275,13 +1273,11 @@ public class IDBuilder extends Builder<ID> {
 
 	@Override
 	public Asset build() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Class buildClass() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

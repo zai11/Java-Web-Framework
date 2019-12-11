@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 import org.apache.commons.io.FileUtils;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.js.builder.JSFile;
 import com.jwf.JavaWebFramework.styling.Stylesheet;
 
 /**
@@ -66,7 +67,7 @@ public class PageBuilder {
 	 */
 	private void printAssets(PrintWriter writer, Page page) {
 		for (Asset asset : page.getAssets()) {
-			writer.println(asset.buildLine());
+			writer.println("\t\t" + asset.buildLine());
 		}
 	}
 
@@ -79,15 +80,20 @@ public class PageBuilder {
 	private void printHead(PrintWriter writer, Page page) {
 		writer.println("<!DOCTYPE html>");
 		writer.println("<html>");
-		writer.println("<head>");
+		writer.println("\t<head>");
 		if (page.getStyles() != null) {
 			for (Stylesheet style : page.getStyles()) {
-				writer.println("<link rel='stylesheet' type='text/css' href='res/css/" + style.getName() + ".css'>");
+				writer.println("\t\t<link rel='stylesheet' type='text/css' href='res/css/" + style.getName() + ".css'>");
 			}
 		}
-		writer.println("<title>" + page.getTitle() + "</title>");
-		writer.println("</head>");
-		writer.println("<body>");
+		if (page.getJSFiles() != null) {
+			for (JSFile jsFile : page.getJSFiles()) {
+				writer.println("\t\t<script type='text/javascript' src='res/js/" + jsFile.getName() + ".js'></script>");
+			}
+		}
+		writer.println("\t\t<title>" + page.getTitle() + "</title>");
+		writer.println("\t</head>");
+		writer.println("\t<body>");
 	}
 
 	/**
@@ -97,7 +103,7 @@ public class PageBuilder {
 	 * @param page   the webpage
 	 */
 	private void printFoot(PrintWriter writer, Page page) {
-		writer.println("</body>");
+		writer.println("\t</body>");
 		writer.println("</html>");
 	}
 

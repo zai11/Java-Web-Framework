@@ -1,5 +1,6 @@
 package com.jwf.JavaWebFramework.main;
 
+import com.jwf.JavaWebFramework.js.builder.JSFileBuilder;
 import com.jwf.JavaWebFramework.misc.ConfigParser;
 import com.jwf.JavaWebFramework.styling.StyleBuilder;
 
@@ -15,6 +16,10 @@ public class JWF {
 		if (SiteConfig.ENABLE_CSS) {
 			StyleBuilder sb = new StyleBuilder(WEBSITE);
 			sb.build();
+		}
+		if (SiteConfig.ENABLE_JS) {
+			JSFileBuilder jsBuilder = new JSFileBuilder();
+			jsBuilder.build();
 		}
 	}
 }

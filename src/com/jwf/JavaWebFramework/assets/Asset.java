@@ -19,8 +19,4 @@ public abstract class Asset {
 	
 	public abstract String buildLine();
 	
-	public Asset setInnerHTML(String html) {
-		return this;
-	}
-	
 }

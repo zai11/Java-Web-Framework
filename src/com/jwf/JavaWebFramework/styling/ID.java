@@ -7,16 +7,16 @@ public class ID {
 	
 	public static final ID NULL = new ID("", new ArrayList<Attribute>());
 	
-	private String name;
+	private String value;
 	private List<Attribute> attributes = new ArrayList<Attribute>();
 	
-	public ID(String name, List<Attribute> attributes) {
-		this.name = name;
+	public ID(String value, List<Attribute> attributes) {
+		this.value = value;
 		this.attributes = attributes;
 	}
 	
-	public String getName() {
-		return name;
+	public String getValue() {
+		return value;
 	}
 	
 	public List<Attribute> getAttribs() {
