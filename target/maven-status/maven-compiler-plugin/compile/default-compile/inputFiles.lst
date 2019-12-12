@@ -27,6 +27,7 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ID.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\ButtonBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\debugging\Logging.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\InputBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Conditional.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Image.java
@@ -46,7 +47,6 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\bu
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Attribute.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSFileBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreak.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\testing\Logging.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ImageBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\CommentBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBox.java
@@ -58,6 +58,7 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSFile.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\JWF.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\PageBuilder.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\debugging\Debug.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Assignment.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\Loop.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\statements\CustomStatement.java

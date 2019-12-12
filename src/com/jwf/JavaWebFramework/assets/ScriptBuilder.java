@@ -131,6 +131,24 @@ public class ScriptBuilder extends Builder<Script> {
 		return this;
 	}
 	
+	public ScriptBuilder createLoop(String varName, int initValue, String condition, boolean increment, List<Statement> statements) {
+		Loop loop = new Loop(varName, initValue, condition, increment, statements);
+		addStatement(loop);
+		return this;
+	}
+	
+	public ScriptBuilder createLoop(String varName, String collectionName, List<Statement> statements) {
+		Loop loop = new Loop(varName, collectionName, statements);
+		addStatement(loop);
+		return this;
+	}
+	
+	public ScriptBuilder createLoop(String condition, List<Statement> statements) {
+		Loop loop = new Loop(condition, statements);
+		addStatement(loop);
+		return this;
+	}
+	
 	public ScriptBuilder createCustomStatement(String body) {
 		CustomStatement cs = new CustomStatement(body);
 		addStatement(cs);

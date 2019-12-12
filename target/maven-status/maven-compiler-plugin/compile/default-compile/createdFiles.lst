@@ -4,6 +4,7 @@ com\jwf\JavaWebFramework\js\builder\statements\Assignment.class
 com\jwf\JavaWebFramework\assets\ScriptBuilder.class
 com\jwf\JavaWebFramework\js\builder\JSFileBuilder.class
 com\jwf\JavaWebFramework\assets\ParagraphBuilder.class
+com\jwf\JavaWebFramework\misc\debugging\Logging.class
 com\jwf\JavaWebFramework\styling\Class.class
 com\jwf\JavaWebFramework\assets\LineBreakBuilder.class
 com\jwf\JavaWebFramework\main\PageBuilder.class
@@ -13,6 +14,7 @@ com\jwf\JavaWebFramework\assets\form\Option.class
 com\jwf\JavaWebFramework\js\builder\statements\FunctionDeclaration.class
 com\jwf\JavaWebFramework\assets\Script.class
 com\jwf\JavaWebFramework\js\builder\statements\FunctionCall.class
+com\jwf\JavaWebFramework\misc\debugging\Debug.class
 com\jwf\JavaWebFramework\js\builder\statements\CustomStatement.class
 com\jwf\JavaWebFramework\main\SiteConfig.class
 com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.class
@@ -41,7 +43,6 @@ com\jwf\JavaWebFramework\assets\form\FormBuilder.class
 com\jwf\JavaWebFramework\main\Website.class
 com\jwf\JavaWebFramework\styling\ClassList.class
 com\jwf\JavaWebFramework\assets\Heading.class
-com\jwf\JavaWebFramework\misc\testing\Logging.class
 com\jwf\JavaWebFramework\assets\Block.class
 com\jwf\JavaWebFramework\js\builder\JSFile.class
 com\jwf\JavaWebFramework\assets\form\OptionBuilder.class
