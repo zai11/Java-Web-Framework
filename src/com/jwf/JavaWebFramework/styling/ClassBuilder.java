@@ -21,7 +21,7 @@ import org.xml.sax.SAXException;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
-import com.jwf.JavaWebFramework.misc.testing.Logging;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class ClassBuilder extends Builder<Class> {
 

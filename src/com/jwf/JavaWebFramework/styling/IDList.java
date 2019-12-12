@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.jwf.JavaWebFramework.misc.testing.Logging;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 /**
  * An iterable list of CSS IDs.

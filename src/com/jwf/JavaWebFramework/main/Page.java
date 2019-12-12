@@ -6,7 +6,7 @@ import java.util.List;
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.AssetType;
 import com.jwf.JavaWebFramework.js.builder.JSFile;
-import com.jwf.JavaWebFramework.misc.testing.Logging;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Stylesheet;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;

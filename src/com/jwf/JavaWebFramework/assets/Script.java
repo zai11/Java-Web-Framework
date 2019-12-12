@@ -3,7 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.js.builder.Statement;
-import com.jwf.JavaWebFramework.misc.testing.Logging;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class Script extends Asset {
 

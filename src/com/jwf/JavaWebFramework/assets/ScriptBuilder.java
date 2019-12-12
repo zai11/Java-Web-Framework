@@ -12,8 +12,8 @@ import com.jwf.JavaWebFramework.js.builder.statements.FunctionCall;
 import com.jwf.JavaWebFramework.js.builder.statements.FunctionDeclaration;
 import com.jwf.JavaWebFramework.js.builder.statements.Loop;
 import com.jwf.JavaWebFramework.js.builder.statements.VariableDeclaration;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.js.builder.statements.Comment;
-import com.jwf.JavaWebFramework.misc.testing.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
 

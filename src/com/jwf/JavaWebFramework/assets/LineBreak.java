@@ -1,6 +1,6 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.misc.testing.Logging;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class LineBreak extends Asset {
 

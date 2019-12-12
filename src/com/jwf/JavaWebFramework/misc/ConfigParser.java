@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.main.SiteConfig;
 import com.jwf.JavaWebFramework.main.Website;
-import com.jwf.JavaWebFramework.misc.testing.Logging;
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class ConfigParser {
 

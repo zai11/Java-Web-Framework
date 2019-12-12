@@ -1,4 +1,4 @@
-package com.jwf.JavaWebFramework.misc.testing;
+package com.jwf.JavaWebFramework.misc.debugging;
 
 public class Logging {
 
