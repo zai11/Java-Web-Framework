@@ -1,5 +1,7 @@
 package com.jwf.JavaWebFramework.styling;
 
+import com.jwf.JavaWebFramework.collections.Units;
+
 /**
  * An object representation of a size.
  * See <a href="../../Documentation/HTML/Styling/sizes.html">Documentation</a>
@@ -14,9 +16,13 @@ public class Size {
 	 * @param numeric the numerical value of the size
 	 * @param unit the unit of the size
 	 */
-	public Size(int numeric, String unit) {
+	public Size(float numeric, Units unit) {
 		this.numeric = numeric;
-		this.unit = unit;
+		this.unit = unit.toString().toLowerCase();
+		
+		if (this.unit.equals("symbol_percentage")){
+			this.unit = "%";
+		}
 	}
 	
 	/**
@@ -39,7 +45,7 @@ public class Size {
 	 * Set the numerical value of the size to the given parameter.
 	 * @param newNumeric the new numerical value
 	 */
-	public void setNumeric(int newNumeric) {
+	public void setNumeric(float newNumeric) {
 		numeric = newNumeric;
 	}
 	

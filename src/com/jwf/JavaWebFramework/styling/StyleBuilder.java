@@ -58,9 +58,9 @@ public class StyleBuilder {
 		for (ID id : style.ids) {
 			writer.println("#" + id.getValue() + " {");
 			for (Attribute a : id.getAttribs()) {
-				writer.println(a.getKey() + " : " + a.getValue() + ";");
+				writer.println("\t" + a.getKey() + " : " + a.getValue() + ";");
 			}
-			writer.println("}");
+			writer.println("}\n");
 		}
 	}
 
@@ -72,11 +72,13 @@ public class StyleBuilder {
 	 */
 	private void writeClasses(PrintWriter writer, Stylesheet style) {
 		for (Class c : style.classes) {
-			writer.println("." + c.getName() + " {");
-			for (Attribute a : c.getAttribs()) {
-				writer.println(a.getKey() + " : " + a.getValue() + ";");
+			for (PseudoClass p : c.getPseudoclasses()) {
+				writer.print("." + c.getName() + p.build() + " {\n");
+				for (Attribute a : c.getAttribs()) {
+					writer.println("\t" + a.getKey() + " : " + a.getValue() + ";");
+				}
+				writer.println("}\n");
 			}
-			writer.println("}");
 		}
 	}
 

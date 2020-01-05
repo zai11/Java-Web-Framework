@@ -6,19 +6,24 @@ import java.util.List;
 public class Class {
 
 	private String name;
-	private List<Attribute> attributes = new ArrayList<Attribute>();
+	private List<Attribute> attributes = new ArrayList<>();
+	private List<PseudoClass> pseudoclasses = new ArrayList<>();
 	
-	public Class(String name, List<Attribute> attributes) {
+	public Class(String name, List<Attribute> attributes, List<PseudoClass> pseudoclasses) {
 		this.name = name;
 		this.attributes = attributes;
+		this.pseudoclasses = pseudoclasses;
 	}
 	
 	public String getName() {
-		return name;
+		return this.name;
 	}
 	
 	public List<Attribute> getAttribs() {
-		return attributes;
+		return this.attributes;
 	}
 	
+	public List<PseudoClass> getPseudoclasses() {
+		return this.pseudoclasses;
+	}
 }

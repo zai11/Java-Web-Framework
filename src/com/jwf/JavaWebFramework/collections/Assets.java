@@ -1,6 +1,6 @@
-package com.jwf.JavaWebFramework.assets;
+package com.jwf.JavaWebFramework.collections;
 
-public enum AssetType {
+public enum Assets {
 
 	BUTTON,
 	BLOCK,

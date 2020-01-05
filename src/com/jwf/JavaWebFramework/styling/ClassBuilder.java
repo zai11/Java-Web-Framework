@@ -26,7 +26,8 @@ import com.jwf.JavaWebFramework.misc.debugging.Logging;
 public class ClassBuilder extends Builder<Class> {
 
 	private String name;
-	private List<Attribute> attributes = new ArrayList<Attribute>();
+	private List<Attribute> attributes = new ArrayList<>();
+	private List<PseudoClass> pseudoclasses = new ArrayList<>();
 
 	/**
 	 * Constructs a class using the given parameter.
@@ -70,6 +71,10 @@ public class ClassBuilder extends Builder<Class> {
 	public void addAttrib(String key, String value) {
 		Attribute a = new Attribute(key, value);
 		this.attributes.add(a);
+	}
+	
+	public void addPseudoclass(PseudoClass pseudoclass) {
+		this.pseudoclasses.add(pseudoclass);
 	}
 
 	/**
@@ -1300,7 +1305,7 @@ public class ClassBuilder extends Builder<Class> {
 
 	@Override
 	public Class buildClass() {
-		return new Class(name, attributes);
+		return new Class(name, attributes, pseudoclasses);
 	}
 
 	@Override

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
-import com.jwf.JavaWebFramework.assets.AssetType;
+import com.jwf.JavaWebFramework.collections.Assets;
 import com.jwf.JavaWebFramework.js.builder.JSFile;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Stylesheet;
@@ -98,7 +98,7 @@ public class Page {
 		return stylesheets;
 	}
 	
-	public Asset findAsset(AssetType type, String cl) {
+	public Asset findAsset(Assets type, String cl) {
 		for (Asset asset : assets) {
 			if (type == asset.assetType) {
 				for (Class c : asset.classes) {
