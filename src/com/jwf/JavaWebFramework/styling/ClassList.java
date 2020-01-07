@@ -39,6 +39,10 @@ public class ClassList implements Iterable<Class> {
 		Logging.LogError("Unable to find class name: " + name + ".");
 		return null;
 	}
+	
+	public int size() {
+		return classes.size();
+	}
 
 	/**
 	 * Returns an iterator over elements of type Class

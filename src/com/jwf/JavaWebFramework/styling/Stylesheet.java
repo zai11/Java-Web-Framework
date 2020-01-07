@@ -1,5 +1,7 @@
 package com.jwf.JavaWebFramework.styling;
 
+import com.jwf.JavaWebFramework.misc.debugging.Logging;
+
 //	TODO: Add in functionality for Pseudo-classes.
 
 /**
@@ -25,9 +27,10 @@ public class Stylesheet {
 	 * @param name the name of the class
 	 * @return the class object to be used later
 	 */
-	public ClassBuilder addClass(String name) {
-		ClassBuilder c = new ClassBuilder(name);
-		classes.addClass(c.buildClass());
+	public Class addClass(String name) {
+		Class c = new Class(name);
+		Logging.LogComment("Added class " + name);
+		classes.addClass(c);
 		return c;
 	}
 	
@@ -36,10 +39,10 @@ public class Stylesheet {
 	 * @param name the name of the id
 	 * @return the id object to be used later
 	 */
-	public IDBuilder addID(String name) {
-		IDBuilder c = new IDBuilder(name);
-		ids.addID(c.buildID());
-		return c;
+	public ID addID(String name) {
+		ID id = new ID(name);
+		ids.addID(id);
+		return id;
 	}
 	
 	/**

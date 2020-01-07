@@ -22,6 +22,11 @@ public class ParagraphBuilder extends Builder<Paragraph> {
 		return this;
 	}
 	
+	public ParagraphBuilder clearID() {
+		this.id = null;
+		return this;
+	}
+	
 	public Paragraph build() {
 		return new Paragraph(text, id, classes);
 	}

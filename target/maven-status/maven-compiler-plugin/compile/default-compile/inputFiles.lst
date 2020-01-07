@@ -24,7 +24,6 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ScriptBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\Statement.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Script.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ClassBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\ID.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\ButtonBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\debugging\Logging.java
@@ -53,7 +52,6 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\CommentBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBox.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Asset.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\IDBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Option.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\collections\PseudoClasses.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionGroupBuilder.java

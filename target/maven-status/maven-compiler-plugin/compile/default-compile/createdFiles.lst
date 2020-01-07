@@ -10,7 +10,6 @@ com\jwf\JavaWebFramework\styling\Class.class
 com\jwf\JavaWebFramework\assets\LineBreakBuilder.class
 com\jwf\JavaWebFramework\main\PageBuilder.class
 com\jwf\JavaWebFramework\assets\form\InputBuilder.class
-com\jwf\JavaWebFramework\styling\ClassBuilder.class
 com\jwf\JavaWebFramework\assets\form\Option.class
 com\jwf\JavaWebFramework\js\builder\statements\FunctionDeclaration.class
 com\jwf\JavaWebFramework\assets\Script.class
@@ -60,7 +59,6 @@ com\jwf\JavaWebFramework\assets\HorizontalLine.class
 com\jwf\JavaWebFramework\collections\Units.class
 com\jwf\JavaWebFramework\assets\Image.class
 com\jwf\JavaWebFramework\assets\ImageBuilder.class
-com\jwf\JavaWebFramework\styling\IDBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSet.class
 com\jwf\JavaWebFramework\assets\form\Button.class

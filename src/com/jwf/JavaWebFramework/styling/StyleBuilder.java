@@ -72,12 +72,21 @@ public class StyleBuilder {
 	 */
 	private void writeClasses(PrintWriter writer, Stylesheet style) {
 		for (Class c : style.classes) {
-			for (PseudoClass p : c.getPseudoclasses()) {
-				writer.print("." + c.getName() + p.build() + " {\n");
+			if (c.getPseudoclasses().size() > 0) {
+				for (PseudoClass p : c.getPseudoclasses()) {
+					writer.print("." + c.getName() + p.build() + " {\n");
+					for (Attribute a : c.getAttribs()) {
+						writer.println("\t" + a.getKey() + " : " + a.getValue() + ";");
+					}
+					writer.println("}\n");
+				}
+			} else {
+				writer.print("." + c.getName() + " {\n");
 				for (Attribute a : c.getAttribs()) {
 					writer.println("\t" + a.getKey() + " : " + a.getValue() + ";");
 				}
 				writer.println("}\n");
+
 			}
 		}
 	}
