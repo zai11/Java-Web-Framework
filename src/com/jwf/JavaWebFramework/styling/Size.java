@@ -1,6 +1,6 @@
 package com.jwf.JavaWebFramework.styling;
 
-import com.jwf.JavaWebFramework.collections.Units;
+import com.jwf.JavaWebFramework.misc.collections.Units;
 
 /**
  * An object representation of a size.

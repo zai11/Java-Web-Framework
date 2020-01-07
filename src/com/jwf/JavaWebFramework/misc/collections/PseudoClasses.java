@@ -1,4 +1,4 @@
-package com.jwf.JavaWebFramework.collections;
+package com.jwf.JavaWebFramework.misc.collections;
 
 public enum PseudoClasses {
 	ACTIVE, CHECKED, DISABLED, EMPTY, ENABLED, FIRST_CHILD, FIRST_OF_TYPE, FOCUS, HOVER, IN_RANGE, INVALID, LANG,

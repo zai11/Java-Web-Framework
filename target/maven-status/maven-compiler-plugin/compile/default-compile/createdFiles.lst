@@ -3,7 +3,6 @@ com\jwf\JavaWebFramework\js\builder\statements\VariableDeclaration.class
 com\jwf\JavaWebFramework\js\builder\statements\Assignment.class
 com\jwf\JavaWebFramework\assets\ScriptBuilder.class
 com\jwf\JavaWebFramework\js\builder\JSFileBuilder.class
-com\jwf\JavaWebFramework\collections\PseudoClasses.class
 com\jwf\JavaWebFramework\assets\ParagraphBuilder.class
 com\jwf\JavaWebFramework\misc\debugging\Logging.class
 com\jwf\JavaWebFramework\styling\Class.class
@@ -16,9 +15,9 @@ com\jwf\JavaWebFramework\assets\Script.class
 com\jwf\JavaWebFramework\js\builder\statements\FunctionCall.class
 com\jwf\JavaWebFramework\misc\debugging\Debug.class
 com\jwf\JavaWebFramework\styling\PseudoClass.class
-com\jwf\JavaWebFramework\collections\Assets.class
 com\jwf\JavaWebFramework\js\builder\statements\CustomStatement.class
 com\jwf\JavaWebFramework\main\SiteConfig.class
+com\jwf\JavaWebFramework\misc\collections\Units.class
 com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.class
 com\jwf\JavaWebFramework\assets\LineBreak.class
 com\jwf\JavaWebFramework\assets\form\SelectBox.class
@@ -39,6 +38,7 @@ com\jwf\JavaWebFramework\assets\form\Form.class
 com\jwf\JavaWebFramework\js\builder\PrimitiveVariable.class
 com\jwf\JavaWebFramework\assets\form\OptionGroup.class
 com\jwf\JavaWebFramework\js\builder\Statement.class
+com\jwf\JavaWebFramework\misc\collections\PseudoClasses.class
 com\jwf\JavaWebFramework\styling\IDList.class
 com\jwf\JavaWebFramework\assets\form\FormBuilder.class
 com\jwf\JavaWebFramework\main\Website.class
@@ -55,8 +55,9 @@ com\jwf\JavaWebFramework\assets\Link.class
 com\jwf\JavaWebFramework\styling\Size.class
 com\jwf\JavaWebFramework\js\builder\statements\Loop.class
 com\jwf\JavaWebFramework\assets\BlockBuilder.class
+com\jwf\JavaWebFramework\misc\collections\Assets.class
 com\jwf\JavaWebFramework\assets\HorizontalLine.class
-com\jwf\JavaWebFramework\collections\Units.class
+com\jwf\JavaWebFramework\misc\collections\Colours.class
 com\jwf\JavaWebFramework\assets\Image.class
 com\jwf\JavaWebFramework\assets\ImageBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.class

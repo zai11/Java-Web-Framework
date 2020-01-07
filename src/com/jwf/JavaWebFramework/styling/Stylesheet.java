@@ -2,8 +2,6 @@ package com.jwf.JavaWebFramework.styling;
 
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
-//	TODO: Add in functionality for Pseudo-classes.
-
 /**
  * An object representation of a stylesheet.
  * See <a href="">Documentation</a>

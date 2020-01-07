@@ -1,25 +1,7 @@
 package com.jwf.JavaWebFramework.styling;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class Class {
 
@@ -56,24 +38,6 @@ public class Class {
 
 	public void addPseudoclass(PseudoClass pseudoclass) {
 		this.pseudoclasses.add(pseudoclass);
-	}
-
-	/**
-	 * Reads the styling.xml file to find the value that corresponds to the given
-	 * colour.
-	 * 
-	 * @param key the colour to search for (e.g. "red")
-	 * @return the value of the colour (e.g. "#FF0000");
-	 */
-	public static String getColour(String key) {
-		String value = "";
-		Map<String, String> colours = ReadXML("colour");
-		if (colours.containsKey(key.toLowerCase())) {
-			value = colours.get(key.toLowerCase());
-			return value;
-		}
-		Logging.LogError("Unable to find the colour key: " + key + ".");
-		return null;
 	}
 
 	/**
@@ -1321,65 +1285,5 @@ public class Class {
 	public Class setFilter(String value) {
 		addAttrib("filter", value);
 		return this;
-	}
-
-	/**
-	 * Search an XML document for a key and return a map of child keys and values.
-	 * 
-	 * @param key the initial key to search for
-	 * @return a map containing the child keys and values
-	 */
-	public static Map<String, String> ReadXML(String key) {
-		File file = getResourceAsFile("styling.xml");
-		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder documentBuilder = null;
-		try {
-
-			documentBuilder = documentBuilderFactory.newDocumentBuilder();
-		} catch (ParserConfigurationException e) {
-			e.printStackTrace();
-		}
-		Document document = null;
-		try {
-			document = documentBuilder.parse(file);
-		} catch (SAXException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		Map<String, String> values = new HashMap<String, String>();
-		Node node = document.getElementsByTagName(key.toLowerCase()).item(0);
-		NodeList children = ((Element) node).getChildNodes();
-		for (int i = 0; i < children.getLength(); i++) {
-			if (children.item(i).getTextContent() != null && children.item(i).getNodeName() != "#text"
-					&& children.item(i).getNodeName() != "#comment") {
-				values.put(children.item(i).getNodeName(), children.item(i).getTextContent());
-			}
-		}
-		return values;
-	}
-
-	public static File getResourceAsFile(String resourcePath) {
-		try {
-			InputStream in = Class.class.getClassLoader().getResourceAsStream(resourcePath);
-			if (in == null) {
-				return null;
-			}
-			File tempFile = File.createTempFile(String.valueOf(in.hashCode()), ".tmp");
-			tempFile.deleteOnExit();
-
-			try (FileOutputStream out = new FileOutputStream(tempFile)) {
-				// copy stream
-				byte[] buffer = new byte[1024];
-				int bytesRead;
-				while ((bytesRead = in.read(buffer)) != -1) {
-					out.write(buffer, 0, bytesRead);
-				}
-			}
-			return tempFile;
-		} catch (IOException e) {
-			e.printStackTrace();
-			return null;
-		}
 	}
 }

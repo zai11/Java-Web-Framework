@@ -2,6 +2,7 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\asset
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ParagraphBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FieldSet.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Website.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\collections\Units.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Builder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\HeadingBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LinkBuilder.java
@@ -10,7 +11,7 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styli
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Stylesheet.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\FormBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionBuilder.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\collections\Assets.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\collections\Colours.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\main\Page.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Block.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Class.java
@@ -47,13 +48,13 @@ D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\bu
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\styling\Attribute.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSFileBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\LineBreak.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\collections\Units.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\collections\PseudoClasses.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\ImageBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\CommentBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\SelectBox.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Asset.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\Option.java
-D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\collections\PseudoClasses.java
+D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\misc\collections\Assets.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\form\OptionGroupBuilder.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\assets\Heading.java
 D:\My Stuff\Coding\Eclipse\Java Web Framework\src\com\jwf\JavaWebFramework\js\builder\JSFile.java

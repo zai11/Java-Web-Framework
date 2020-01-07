@@ -1,6 +1,6 @@
 package com.jwf.JavaWebFramework.styling;
 
-import com.jwf.JavaWebFramework.collections.PseudoClasses;
+import com.jwf.JavaWebFramework.misc.collections.PseudoClasses;
 
 public class PseudoClass {
 

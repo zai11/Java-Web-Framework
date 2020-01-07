@@ -3,7 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
-import com.jwf.JavaWebFramework.collections.Assets;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
@@ -16,7 +16,6 @@ import com.jwf.JavaWebFramework.styling.ID;
  */
 public class Button extends Asset {
 	
-	Assets assetType = Assets.BUTTON;
 	String type;
 	String text;
 	String name;
@@ -32,6 +31,7 @@ public class Button extends Asset {
 	 * @param classes  any CSS classes to be attached
 	 */
 	public Button(String type, String text, String name, boolean disabled, ID id, List<Class> classes) {
+		this.assetType = Assets.BUTTON;
 		this.type = type;
 		this.text = text;
 		this.name = name;

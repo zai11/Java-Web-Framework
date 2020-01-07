@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
-import com.jwf.JavaWebFramework.collections.Assets;
 import com.jwf.JavaWebFramework.js.builder.JSFile;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
-import com.jwf.JavaWebFramework.styling.Stylesheet;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.styling.Stylesheet;
 
 /**
  * An object representation of a HTML webpage.

@@ -3,7 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jwf.JavaWebFramework.collections.Assets;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
 

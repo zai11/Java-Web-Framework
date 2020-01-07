@@ -1,4 +1,4 @@
-package com.jwf.JavaWebFramework.collections;
+package com.jwf.JavaWebFramework.misc.collections;
 
 public enum Units {
 
