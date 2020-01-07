@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
@@ -24,6 +25,7 @@ public class OptionGroup extends Asset {
 	private List<Asset> children;
 	
 	public OptionGroup(String label, boolean disabled, ID id, List<Class> classes, List<Asset> children) {
+		this.assetType = Assets.OPTION_GROUP;
 		this.label = label;
 		this.disabled = disabled;
 		this.id = id;

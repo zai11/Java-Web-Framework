@@ -17,6 +17,7 @@ public enum Assets {
 	OPTION,
 	OPTION_GROUP,
 	PARAGRAPH,
-	SELECT_BOX
+	SELECT_BOX,
+	SCRIPT
 	
 }

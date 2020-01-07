@@ -1,10 +1,13 @@
 package com.jwf.JavaWebFramework.assets;
 
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class LineBreak extends Asset {
 
-	public LineBreak() {}
+	public LineBreak() {
+		this.assetType = Assets.LINE_BREAK;
+	}
 	
 	@Override
 	public String buildLine() {

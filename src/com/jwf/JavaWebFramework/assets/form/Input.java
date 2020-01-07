@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
@@ -30,6 +31,7 @@ public class Input extends Asset {
 	 * @param classes  any CSS classes to be attached
 	 */
 	public Input(String type, String name, String text, boolean required, ID id, List<Class> classes) {
+		this.assetType = Assets.INPUT;
 		this.type = type;
 		this.name = name;
 		this.text = text;

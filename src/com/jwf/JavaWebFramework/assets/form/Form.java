@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Block;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
@@ -26,6 +27,7 @@ public class Form extends Asset {
 	 * @param children an array of the child assets
 	 */
 	public Form(ID id, List<Class> classes, List<Asset> children) {
+		this.assetType = Assets.FORM;
 		this.id = id;
 		this.classes = classes;
 		this.children = children;

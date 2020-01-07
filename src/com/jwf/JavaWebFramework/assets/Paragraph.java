@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -22,6 +23,7 @@ public class Paragraph extends Asset {
 	 * @param classes any CSS classes to be attached
 	 */
 	public Paragraph(String text, ID id, List<Class> classes) {
+		this.assetType = Assets.PARAGRAPH;
 		this.text = text;
 		this.id = id;
 		this.classes = classes;

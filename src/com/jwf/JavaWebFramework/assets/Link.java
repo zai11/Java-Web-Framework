@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -24,6 +25,7 @@ public class Link extends Asset {
 	 * @param classes any CSS classes to be attached
 	 */
 	public Link(String text, String address, ID id, List<Class> classes) {
+		this.assetType = Assets.LINK;
 		this.text = text;
 		this.address = address;
 		this.id = id;

@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.js.builder.Statement;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 public class Script extends Asset {
@@ -10,6 +11,7 @@ public class Script extends Asset {
 	List<Statement> statements;
 	
 	public Script(List<Statement> statements) {
+		this.assetType = Assets.SCRIPT;
 		this.statements = statements;
 	}
 	

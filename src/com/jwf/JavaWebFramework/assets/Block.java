@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -23,6 +24,7 @@ public class Block extends Asset {
 	 * @param children an array of child assets
 	 */
 	public Block(ID id, List<Class> classes, List<Asset> children) {
+		this.assetType = Assets.BLOCK;
 		this.id = id;
 		this.classes = classes;
 		this.children = children;

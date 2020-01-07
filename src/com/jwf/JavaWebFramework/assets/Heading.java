@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -33,6 +34,7 @@ public class Heading extends Asset {
 			Logging.LogError("Invalid heading size.");
 			return;
 		}
+		this.assetType = Assets.HEADING;
 		this.text = text;
 		this.size = size;
 		this.id = id;

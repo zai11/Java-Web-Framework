@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
@@ -35,6 +36,7 @@ public class Option extends Asset {
 	 * @param classes  any CSS classes to be attached
 	 */
 	public Option(String label, String value, boolean selected, boolean disabled, ID id, List<Class> classes) {
+		this.assetType = Assets.OPTION;
 		this.label = label;
 		this.value = value;
 		this.selected = selected;

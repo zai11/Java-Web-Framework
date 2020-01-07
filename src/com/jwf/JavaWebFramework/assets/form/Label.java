@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
@@ -20,6 +21,7 @@ public class Label extends Asset {
 	 * @param classes  any CSS classes to be attached
 	 */
 	public Label(String text, String parent, ID id, List<Class> classes) {
+		this.assetType = Assets.LABEL;
 		this.text = text;
 		this.parent = parent;
 		this.id = id;

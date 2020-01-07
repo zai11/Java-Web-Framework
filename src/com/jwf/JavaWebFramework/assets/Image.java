@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.styling.ID;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 
@@ -24,6 +25,7 @@ public class Image extends Asset {
 	 * @param alt the alternative text to be displayed
 	 */
 	public Image(String src, String alt, ID id, List<Class> classes) {
+		this.assetType = Assets.IMAGE;
 		this.src = src;
 		this.alt = alt;
 		this.id = id;

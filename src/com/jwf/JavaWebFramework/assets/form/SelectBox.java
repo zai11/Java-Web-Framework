@@ -3,6 +3,7 @@ package com.jwf.JavaWebFramework.assets.form;
 import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
+import com.jwf.JavaWebFramework.misc.collections.Assets;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
@@ -26,6 +27,7 @@ public class SelectBox extends Asset {
 	String name;
 	
 	public SelectBox (int size, boolean autofocus, boolean disabled, boolean multiple, boolean required, String form, String name, ID id, List<Class> classes) {
+		this.assetType = Assets.SELECT_BOX;
 		this.size = size;
 		this.autofocus = autofocus;
 		this.disabled = disabled;
