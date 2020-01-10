@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.js.builder.Statement;
 
+/**
+ * A javascript loop.
+ * e.g. for, while, etc.
+ */
 public class Loop extends Statement {
 	
 	private short type;
@@ -16,12 +20,25 @@ public class Loop extends Statement {
 	
 	private String collectionName;
 	
+	/**
+	 * Constructs a loop using the provided parameters.
+	 * @param num			the number of times the loop will repeat
+	 * @param statements	a list of statements to be looped over
+	 */
 	public Loop(int num, List<Statement> statements) {
 		this.type = 0;
 		this.num = num;
 		this.statements = statements;
 	}
 	
+	/**
+	 * Constructs a loop using the provided parameters
+	 * @param varName		the name of the internal variable
+	 * @param initValue		the initial value of the variable
+	 * @param condition		the condition to check the variable against
+	 * @param increment		whether the variable should increment (true) or decrement (false)
+	 * @param statements	a list of statements to be looped over
+	 */
 	public Loop(String varName, int initValue, String condition, boolean increment, List<Statement> statements) {
 		this.type = 1;
 		this.varName = varName;
@@ -31,6 +48,12 @@ public class Loop extends Statement {
 		this.statements = statements;
 	}
 	
+	/**
+	 * Constructs a loop using the provided parameters
+	 * @param varName			the name of the internal variable
+	 * @param collectionName	the collection that should be searched over
+	 * @param statements		a list of statements to be looped over
+	 */
 	public Loop(String varName, String collectionName, List<Statement> statements) {
 		this.type = 2;
 		this.varName = varName;
@@ -38,12 +61,21 @@ public class Loop extends Statement {
 		this.statements = statements;
 	}
 	
+	/**
+	 * Constructs a loop using the provided parameters
+	 * @param condition		the condition to be checked
+	 * @param statements	a list of statements to be looped over
+	 */
 	public Loop(String condition, List<Statement> statements) {
 		this.type = 3;
 		this.condition = condition;
 		this.statements = statements;
 	}
 	
+	/**
+	 * Builds the body of the loop.
+	 * @return	the body of the loop
+	 */
 	@Override
 	public String build() {
 		switch(this.type) {

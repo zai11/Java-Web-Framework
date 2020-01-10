@@ -86,9 +86,7 @@ public class StyleBuilder {
 					writer.println("\t" + a.getKey() + " : " + a.getValue() + ";");
 				}
 				writer.println("}\n");
-
 			}
 		}
 	}
-
 }

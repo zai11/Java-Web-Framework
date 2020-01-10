@@ -1,5 +1,8 @@
 package com.jwf.JavaWebFramework.misc.collections;
 
+/**
+ * An enum of all the types of units.
+ */
 public enum Units {
 
 	PX,

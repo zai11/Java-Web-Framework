@@ -10,18 +10,29 @@ import com.jwf.JavaWebFramework.main.SiteConfig;
 import com.jwf.JavaWebFramework.main.Website;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
+/**
+ * The config parser - reads and parses the config file.
+ */
 public class ConfigParser {
 
 	String address;
 	Website site;
 	List<String> lines = new ArrayList<>();
 
+	/**
+	 * Constructs the config parser using the provided parameters.
+	 * @param 	site	the website
+	 * @param 	address	the address of the config file
+	 */
 	public ConfigParser(Website site, String address) {
 		this.address = Paths.get(".").toAbsolutePath().normalize().toString() + "/Input Files/conf/"
 				+ address;
 		this.site = site;
 	}
 
+	/**
+	 * Reads the config file.
+	 */
 	private void readFile() {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(address));
@@ -36,6 +47,9 @@ public class ConfigParser {
 		}
 	}
 
+	/**
+	 * Parses the config file.
+	 */
 	public void parse() {
 		readFile();
 		for (String line : lines) {
@@ -59,7 +73,6 @@ public class ConfigParser {
 			
 			if (line.startsWith("import_config"))
 				SiteConfig.IMPORT_CONFIG = Boolean.valueOf(line.substring(14));
-				
 		}
 	}
 }

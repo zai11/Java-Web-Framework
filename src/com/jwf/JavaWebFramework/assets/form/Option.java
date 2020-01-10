@@ -11,7 +11,7 @@ import com.jwf.JavaWebFramework.styling.Class;
 /**
  * An Option for a Select Box - equivalent to the HTML {@code <option>} tags.
  * See <a href=
- * "../../../Documentation/HTML/Assets/Forms/Option.html">Documentation</a>
+ * "../../../Documentation/HTML/Assets/Forms/options.html">Documentation</a>
  * 
  * @see Asset
  * @see Form
@@ -46,7 +46,7 @@ public class Option extends Asset {
 	}
 	
 	/**
-	 * Builds the HTML line for the button based on the set variables.
+	 * Builds the HTML line for the option based on the set variables.
 	 * 
 	 * @return the HTML line
 	 */

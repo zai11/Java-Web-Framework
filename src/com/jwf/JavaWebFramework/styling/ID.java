@@ -3,19 +3,34 @@ package com.jwf.JavaWebFramework.styling;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A CSS ID.
+ */
 public class ID {
 	
 	private String value;
 	private List<Attribute> attributes = new ArrayList<Attribute>();
 	
+	/**
+	 * Constructs the id using the provided parameter.
+	 * @param	value	the id value
+	 */
 	public ID(String value) {
 		this.value = value;
 	}
 	
+	/**
+	 * Gets the value of the id.
+	 * @return	the value
+	 */
 	public String getValue() {
 		return value;
 	}
 	
+	/**
+	 * Gets a list of attributes of the id.
+	 * @return	the attributes
+	 */
 	public List<Attribute> getAttribs() {
 		return attributes;
 	}

@@ -10,7 +10,7 @@ import com.jwf.JavaWebFramework.styling.Class;
 
 /**
  * An input for a form - equivalent to the HTML {@code <input>} tags.
- * See <a href="">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/Forms/inputs.html">Documentation</a>
  * @see Asset
  * @see Form
  */

@@ -3,24 +3,43 @@ package com.jwf.JavaWebFramework.styling;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A CSS Class.
+ */
 public class Class {
 
 	private String name;
 	private List<Attribute> attributes = new ArrayList<>();
 	private List<PseudoClass> pseudoclasses = new ArrayList<>();
 
+	/**
+	 * Constructs a class using the provided parameter.
+	 * @param 	name	the name of the class
+	 */
 	public Class(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * Gets the name of the class.
+	 * @return	the name
+	 */
 	public String getName() {
 		return this.name;
 	}
 
+	/**
+	 * Gets the attributes in the class.
+	 * @return	the attributes
+	 */
 	public List<Attribute> getAttribs() {
 		return this.attributes;
 	}
 
+	/**
+	 * Gets a list of pseudoclasses attached to the class.
+	 * @return
+	 */
 	public List<PseudoClass> getPseudoclasses() {
 		return this.pseudoclasses;
 	}

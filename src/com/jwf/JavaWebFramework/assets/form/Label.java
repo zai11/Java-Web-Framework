@@ -8,6 +8,12 @@ import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
 
+/**
+ * A label for a form - equivalent to the HTML {@code <label>} tags.
+ * See <a href="../../../Documentation/HTML/Assets/Forms/labels.html">Documentation</a>
+ * @see Asset
+ * @see Form
+ */
 public class Label extends Asset {
 
 	String text;

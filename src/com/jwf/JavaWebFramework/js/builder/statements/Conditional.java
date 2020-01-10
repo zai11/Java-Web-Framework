@@ -7,6 +7,10 @@ import com.jwf.JavaWebFramework.assets.ScriptBuilder;
 import com.jwf.JavaWebFramework.js.builder.JSFile;
 import com.jwf.JavaWebFramework.js.builder.Statement;
 
+/**
+ * A javascript conditional statement.
+ * e.g. if, if/else
+ */
 public class Conditional extends Statement {
 	
 	private String condition;
@@ -15,12 +19,25 @@ public class Conditional extends Statement {
 	private ScriptBuilder p1;
 	private JSFile p2;
 	
+	/**
+	 * Constructs a conditional for a script using the provided parameters.
+	 * @param 	condition		the condition to be checked
+	 * @param 	trueStatements	a list of statements to be executed if the condition is true
+	 * @param 	parent			the parent ScriptBuilder object
+	 */
 	public Conditional(String condition, List<Statement> trueStatements, ScriptBuilder parent) {
 		this.condition = condition;
 		this.trueStatements = trueStatements;
 		this.p1 = parent;
 	}
 	
+	/**
+	 * Constructs a conditional for a script using the provided parameters.
+	 * @param 	condition		the condition to be checked
+	 * @param 	trueStatements	a list of statements to be executed if the condition is true
+	 * @param 	falseStatements	a list of statements to be executed if the condition is false
+	 * @param 	parent			the parent ScriptBuilder object
+	 */
 	public Conditional(String condition, List<Statement> trueStatements, List<Statement> falseStatements, ScriptBuilder parent) {
 		this.condition = condition;
 		this.trueStatements = trueStatements;
@@ -28,12 +45,25 @@ public class Conditional extends Statement {
 		this.p1 = parent;
 	}
 	
+	/**
+	 * Constructs a conditional for a file using the provided parameters.
+	 * @param 	condition		the condition to be checked
+	 * @param 	trueStatements	a list of statements to be executed if the condition is true
+	 * @param 	parent			the parent JSFile object
+	 */
 	public Conditional(String condition, List<Statement> trueStatements, JSFile parent) {
 		this.condition = condition;
 		this.trueStatements = trueStatements;
 		this.p2 = parent;
 	}
 	
+	/**
+	 * Constructs a conditional for a file using the provided parameters.
+	 * @param 	condition		the condition to be checked
+	 * @param 	trueStatements	a list of statements to be executed if the condition is true
+	 * @param 	falseStatements	a list of statements to be executed if the condition is false
+	 * @param 	parent			the parent JSFile object
+	 */
 	public Conditional(String condition, List<Statement> trueStatements, List<Statement> falseStatements, JSFile parent) {
 		this.condition = condition;
 		this.trueStatements = trueStatements;
@@ -41,6 +71,10 @@ public class Conditional extends Statement {
 		this.p2 = parent;
 	}
 
+	/**
+	 * Builds the body of the conditional.
+	 * @return the body of the conditional
+	 */
 	@Override
 	public String build() {
 		this.body = "";

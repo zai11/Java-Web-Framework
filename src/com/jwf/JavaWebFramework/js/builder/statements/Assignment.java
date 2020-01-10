@@ -2,39 +2,39 @@ package com.jwf.JavaWebFramework.js.builder.statements;
 
 import com.jwf.JavaWebFramework.js.builder.Statement;
 
-public class Assignment<E> extends Statement {
+/**
+ * A javascript assignment
+ * @param	<T>	The type of assignment
+ */
+public class Assignment<T> extends Statement {
 
 	String varName = "";
-	E value;
+	T value;
 
-	@SuppressWarnings("unchecked")
-	public Assignment(String varName, E value) {
+	/**
+	 * Constructs an assignment statement using the provided variables.
+	 * @param 	varName	the name of the variable
+	 * @param 	value	the value of the variable
+	 */
+	public Assignment(String varName, T value) {
 		this.varName = varName;
 		this.value = value;
-		if (value instanceof String && !((String) value).contains("@var")) {
-			this.body = this.varName + " = \"" + this.value + "\";";
-		} else {
-			if (value instanceof String && ((String) this.value).contains("@var"))
-				this.value = (E) this.value.toString().substring(5);
-			this.body = this.varName + " = " + this.value + ";";
-		}
-	}
-	
-	@SuppressWarnings("unchecked")
-	public Assignment(String varName, E value, Statement parent) {
-		this.varName = varName;
-		this.value = value;
-		if (value instanceof String && !((String) value).contains("@var")) {
-			this.body = this.varName + " = \"" + this.value + "\";";
-		} else {
-			if (value instanceof String && ((String) this.value).contains("@var"))
-				this.value = (E) this.value.toString().substring(5);
-			this.body = this.varName + " = " + this.value + ";";
-		}
 	}
 
+	/**
+	 * Builds the body of the assignment.
+	 * @return	the body of the assignment
+	 */
 	@Override
+	@SuppressWarnings("unchecked")
 	public String build() {
+		if (value instanceof String && !((String) value).contains("@var")) {
+			this.body = this.varName + " = \"" + this.value + "\";";
+		} else {
+			if (value instanceof String && ((String) this.value).contains("@var"))
+				this.value = (T) this.value.toString().substring(5);
+			this.body = this.varName + " = " + this.value + ";";
+		}
 		return this.body;
 	}
 }

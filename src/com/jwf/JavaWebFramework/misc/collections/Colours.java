@@ -1,5 +1,8 @@
 package com.jwf.JavaWebFramework.misc.collections;
 
+/**
+ * Name and value pairs for CSS colours.
+ */
 public class Colours {
 
 	// Red Colours:

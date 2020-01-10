@@ -1,5 +1,8 @@
 package com.jwf.JavaWebFramework.misc.collections;
 
+/**
+ * An enum of all the types of pseudoclasses.
+ */
 public enum PseudoClasses {
 	ACTIVE, CHECKED, DISABLED, EMPTY, ENABLED, FIRST_CHILD, FIRST_OF_TYPE, FOCUS, HOVER, IN_RANGE, INVALID, LANG,
 	LAST_CHILD, LAST_OF_TYPE, LINK, NTH_CHILD, NTH_LAST_CHILD, NTH_LAST_OF_TYPE, NTH_OF_TYPE, ONLY_OF_TYPE, ONLY_CHILD,
