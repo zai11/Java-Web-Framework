@@ -155,6 +155,10 @@ public class PageBuilder {
 		}
 	}
 
+	/**
+	 * Deletes the output directory and all of the files within it.
+	 * @param folder	The address of the output directory
+	 */
 	private void deleteOutputDir(File folder) {
 		File[] files = folder.listFiles();
 		if (files != null) {

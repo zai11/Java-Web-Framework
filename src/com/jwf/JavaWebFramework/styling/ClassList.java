@@ -40,6 +40,10 @@ public class ClassList implements Iterable<Class> {
 		return null;
 	}
 	
+	/**
+	 * Returns the number of elements in the list.
+	 * @return	the size of the list
+	 */
 	public int size() {
 		return classes.size();
 	}

@@ -53,26 +53,33 @@ public class ConfigParser {
 	public void parse() {
 		readFile();
 		for (String line : lines) {
-			if (line.startsWith("title"))
+			String prefix = line.split("=")[0];
+			switch(prefix) {
+			case "title":
 				SiteConfig.NAME = line.substring(6);
-			
-			if (line.startsWith("extension"))
+				break;
+			case "extension":
 				SiteConfig.EXTENSION = line.substring(10);
-			
-			if (line.startsWith("clear_output_dir"))
+				break;
+			case "clear_output_dir":
 				SiteConfig.CLEAR_OUTPUT_DIR = Boolean.valueOf(line.substring(17));
-			
-			if (line.startsWith("enable_css"))
+				break;
+			case "enable_css":
 				SiteConfig.ENABLE_CSS = Boolean.valueOf(line.substring(11));
-			
-			if (line.startsWith("enable_images"))
+				break;
+			case "enable_images":
 				SiteConfig.ENABLE_IMAGES = Boolean.valueOf(line.substring(14));
-			
-			if (line.startsWith("enable_js"))
+				break;
+			case "enable_js":
 				SiteConfig.ENABLE_JS = Boolean.valueOf(line.substring(10));
-			
-			if (line.startsWith("import_config"))
+				break;
+			case "import_config":
 				SiteConfig.IMPORT_CONFIG = Boolean.valueOf(line.substring(14));
+				break;
+			default:
+				Logging.LogWarning("Invalid config statement: " + line);
+				break;
+			}
 		}
 	}
 }

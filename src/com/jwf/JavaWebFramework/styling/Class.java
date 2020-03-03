@@ -55,6 +55,10 @@ public class Class {
 		this.attributes.add(a);
 	}
 
+	/**
+	 * Adds a pseudoclass to the list of pseudoclasses.
+	 * @param pseudoclass	the pseudoclass to add
+	 */
 	public void addPseudoclass(PseudoClass pseudoclass) {
 		this.pseudoclasses.add(pseudoclass);
 	}
