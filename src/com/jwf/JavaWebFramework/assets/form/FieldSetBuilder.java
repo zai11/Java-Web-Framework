@@ -5,8 +5,8 @@ import java.util.List;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A FieldSet Builder - All attributes are set and then the final fieldset is then constructed.
@@ -57,21 +57,4 @@ public class FieldSetBuilder extends Builder<FieldSet> {
 	public Asset build() {
 		return new FieldSet(id, classes, children);
 	}
-
-	/**
-	 * To be removed
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-
 }

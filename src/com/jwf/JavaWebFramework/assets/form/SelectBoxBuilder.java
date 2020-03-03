@@ -2,8 +2,8 @@ package com.jwf.JavaWebFramework.assets.form;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Select Box Builder - All attributes are set and then the final select box is then constructed.
@@ -122,21 +122,4 @@ public class SelectBoxBuilder extends Builder<SelectBox> {
 	public Asset build() {
 		return new SelectBox(size, autofocus, disabled, multiple, required, form, name, id, classes);
 	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-	
 }

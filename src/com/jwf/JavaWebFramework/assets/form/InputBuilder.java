@@ -2,8 +2,8 @@ package com.jwf.JavaWebFramework.assets.form;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * An Input Builder - All attributes are set and then the final input is then constructed.
@@ -86,21 +86,5 @@ public class InputBuilder extends Builder<Input> {
 	@Override
 	public Asset build() {
 		return new Input(type, name, text, required, id, classes);
-	}
-
-	/**
-	 * To be removed
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed
-	 */
-	@Override
-	public ID buildID() {
-		return null;
 	}
 }

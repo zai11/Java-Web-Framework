@@ -1,7 +1,7 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * An Image Builder - All attributes are set and then the final image is then constructed.
@@ -62,21 +62,4 @@ public class ImageBuilder extends Builder<Image> {
 	public Asset build() {
 		return new Image(src, alt, id, classes);
 	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-
 }

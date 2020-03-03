@@ -1,9 +1,9 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.assets.form.Button;
 import com.jwf.JavaWebFramework.assets.form.Form;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Link Builder - All attributes are set and then the final link is then constructed.
@@ -65,21 +65,4 @@ public class LinkBuilder extends Builder<Link> {
 	public Asset build() {
 		return new Link(text, address, id, classes);
 	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-
 }

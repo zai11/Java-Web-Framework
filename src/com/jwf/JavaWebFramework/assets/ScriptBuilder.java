@@ -3,9 +3,11 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.jwf.JavaWebFramework.assets.form.Form;
 import com.jwf.JavaWebFramework.js.builder.PrimitiveVariable;
 import com.jwf.JavaWebFramework.js.builder.Statement;
 import com.jwf.JavaWebFramework.js.builder.statements.Assignment;
+import com.jwf.JavaWebFramework.js.builder.statements.Comment;
 import com.jwf.JavaWebFramework.js.builder.statements.Conditional;
 import com.jwf.JavaWebFramework.js.builder.statements.CustomStatement;
 import com.jwf.JavaWebFramework.js.builder.statements.FunctionCall;
@@ -13,9 +15,6 @@ import com.jwf.JavaWebFramework.js.builder.statements.FunctionDeclaration;
 import com.jwf.JavaWebFramework.js.builder.statements.Loop;
 import com.jwf.JavaWebFramework.js.builder.statements.VariableDeclaration;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
-import com.jwf.JavaWebFramework.js.builder.statements.Comment;
-import com.jwf.JavaWebFramework.styling.Class;
-import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Script Builder - All attributes are set and then the final script is then constructed.
@@ -288,21 +287,4 @@ public class ScriptBuilder extends Builder<Script> {
 	public Asset build() {
 		return new Script(statements);
 	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-
 }

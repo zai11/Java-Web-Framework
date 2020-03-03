@@ -2,8 +2,8 @@ package com.jwf.JavaWebFramework.assets.form;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Label Builder - All attributes are set and then the final label is then constructed.
@@ -65,21 +65,4 @@ public class LabelBuilder extends Builder<Label> {
 	public Asset build() {
 		return new Label(text, parent, id, classes);
 	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-
 }

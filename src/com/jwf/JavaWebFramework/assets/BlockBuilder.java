@@ -54,20 +54,4 @@ public class BlockBuilder extends Builder<Block> {
 	public Asset build() {
 		return new Block(id, classes, children);
 	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
 }

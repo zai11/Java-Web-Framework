@@ -1,8 +1,6 @@
 package com.jwf.JavaWebFramework.assets;
 
 import com.jwf.JavaWebFramework.assets.form.Form;
-import com.jwf.JavaWebFramework.styling.Class;
-import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Comment Builder - All attributes are set and then the final comment is then constructed.
@@ -32,21 +30,5 @@ public class CommentBuilder extends Builder<Comment> {
 	@Override
 	public Asset build() {
 		return new Comment(text);
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
 	}
 }

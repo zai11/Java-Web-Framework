@@ -6,6 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/My Stuff/Coding/Eclipse/Java Web Framework/libs/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Dev/Java/JWF/libs/commons-io-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

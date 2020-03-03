@@ -18,7 +18,4 @@ public abstract class Builder<T> {
 	
 	public abstract Asset build();
 	
-	public abstract Class buildClass();
-	
-	public abstract ID buildID();
 }

@@ -2,8 +2,8 @@ package com.jwf.JavaWebFramework.assets.form;
 
 import com.jwf.JavaWebFramework.assets.Asset;
 import com.jwf.JavaWebFramework.assets.Builder;
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Button Builder - All attributes are set and then the final button is then constructed.
@@ -87,21 +87,4 @@ public class ButtonBuilder extends Builder<Button> {
 	public Asset build() {
 		return new Button(type, text, name, disabled, id, classes);
 	}
-
-	/**
-	 * TODO: Find a way to remove these.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 *	TODO: Find a way to remove these.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
-	}
-
 }

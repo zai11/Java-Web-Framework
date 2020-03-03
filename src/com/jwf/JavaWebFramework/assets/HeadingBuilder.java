@@ -1,8 +1,8 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.assets.form.Form;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Heading Builder - All attributes are set and then the final heading is then constructed.
@@ -63,21 +63,5 @@ public class HeadingBuilder extends Builder<Heading> {
 	@Override
 	public Asset build() {
 		return new Heading(text, size, id, classes);
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
 	}
 }

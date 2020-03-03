@@ -1,8 +1,5 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.styling.Class;
-import com.jwf.JavaWebFramework.styling.ID;
-
 /**
  * A Line Break Builder - All attributes are set and then the final line break is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/line_break.html#LineBreakBuilder">Documentation</a>
@@ -18,21 +15,5 @@ public class LineBreakBuilder extends Builder<LineBreak> {
 	@Override
 	public Asset build() {
 		return new LineBreak();
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public Class buildClass() {
-		return null;
-	}
-
-	/**
-	 * To be removed.
-	 */
-	@Override
-	public ID buildID() {
-		return null;
 	}
 }
