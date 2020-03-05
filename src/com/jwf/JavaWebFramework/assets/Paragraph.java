@@ -2,10 +2,11 @@ package com.jwf.JavaWebFramework.assets;
 
 import java.util.List;
 
-import com.jwf.JavaWebFramework.styling.ID;
 import com.jwf.JavaWebFramework.misc.collections.Assets;
+import com.jwf.JavaWebFramework.misc.collections.Formatting;
 import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
+import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A paragraph of text - equivalent to the HTML {@code <p>} tags.
@@ -15,6 +16,7 @@ import com.jwf.JavaWebFramework.styling.Class;
 public class Paragraph extends Asset {
 
 	private String text = "";
+	private Formatting format;
 	
 	/**
 	 * Constructs a paragraph using the given parameters.
@@ -22,9 +24,10 @@ public class Paragraph extends Asset {
 	 * @param id      the CSS ID of the paragraph
 	 * @param classes any CSS classes to be attached
 	 */
-	public Paragraph(String text, ID id, List<Class> classes) {
+	public Paragraph(String text, Formatting format, ID id, List<Class> classes) {
 		this.assetType = Assets.PARAGRAPH;
 		this.text = text;
+		this.format = format;
 		this.id = id;
 		this.classes = classes;
 	}
@@ -37,7 +40,46 @@ public class Paragraph extends Asset {
 	@Override
 	public String buildLine() {
 		Logging.LogComment("Creating Paragraph...");
-		String line = "<p";
+		String tag = "";
+		switch(format.toString().toLowerCase()) {
+		case "none":
+			tag = "p";
+			break;
+		case "bold":
+			tag = "b";
+			break;
+		case "important":
+			tag = "strong";
+			break;
+		case "italic":
+			tag = "i";
+			break;
+		case "emphasized":
+			tag = "em";
+			break;
+		case "marked":
+			tag = "mark";
+			break;
+		case "small":
+			tag = "small";
+			break;
+		case "deleted":
+			tag = "del";
+			break;
+		case "inserted":
+			tag = "ins";
+			break;
+		case "subscript":
+			tag = "sub";
+			break;
+		case "superscript":
+			tag = "sup";
+			break;
+		default:
+			Logging.LogError("Invalid format: " + format);
+			break;
+		}
+		String line = "<" + tag;
 		if (classes != null) {
 			line += " class='";
 			for (Class c : classes) {
@@ -47,7 +89,7 @@ public class Paragraph extends Asset {
 		}
 		if (id != null)
 			line += " id='"+ id.getValue() + "'";
-		line += ">" + text + "</p>";
+		line += ">" + text + "</" + tag + ">";
 		return line;
 	}
 }

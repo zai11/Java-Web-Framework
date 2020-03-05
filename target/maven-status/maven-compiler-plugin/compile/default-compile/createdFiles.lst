@@ -63,6 +63,7 @@ com\jwf\JavaWebFramework\assets\ImageBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSet.class
 com\jwf\JavaWebFramework\assets\form\Button.class
+com\jwf\JavaWebFramework\misc\collections\Formatting.class
 com\jwf\JavaWebFramework\assets\Asset.class
 com\jwf\JavaWebFramework\styling\StyleBuilder.class
 com\jwf\JavaWebFramework\assets\form\ButtonBuilder.class

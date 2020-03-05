@@ -1,6 +1,7 @@
 package com.jwf.JavaWebFramework.assets;
 
 import com.jwf.JavaWebFramework.assets.form.Form;
+import com.jwf.JavaWebFramework.misc.collections.Formatting;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
 
@@ -14,6 +15,7 @@ import com.jwf.JavaWebFramework.styling.ID;
 public class ParagraphBuilder extends Builder<Paragraph> {
 
 	private String text;
+	private Formatting format = Formatting.NONE;
 	
 	/**
 	 * Sets the text of the paragraph.
@@ -22,6 +24,11 @@ public class ParagraphBuilder extends Builder<Paragraph> {
 	 */
 	public ParagraphBuilder setText(String text) {
 		this.text = text;
+		return this;
+	}
+	
+	public ParagraphBuilder setFormatting(Formatting format) {
+		this.format = format;
 		return this;
 	}
 	
@@ -59,6 +66,6 @@ public class ParagraphBuilder extends Builder<Paragraph> {
 	 * @return	the constructed paragraph
 	 */
 	public Paragraph build() {
-		return new Paragraph(text, id, classes);
+		return new Paragraph(text, format, id, classes);
 	}
 }
