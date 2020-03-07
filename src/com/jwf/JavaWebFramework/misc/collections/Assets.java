@@ -21,6 +21,7 @@ public enum Assets {
 	OPTION_GROUP,
 	PARAGRAPH,
 	SELECT_BOX,
-	SCRIPT
+	SCRIPT,
+	QUOTATION
 	
 }

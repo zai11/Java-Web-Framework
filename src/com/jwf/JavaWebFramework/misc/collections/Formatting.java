@@ -12,6 +12,7 @@ public enum Formatting {
 	DELETED,
 	INSERTED,
 	SUBSCRIPT,
-	SUPERSCRIPT
+	SUPERSCRIPT,
+	QUOTATION
 	
 }

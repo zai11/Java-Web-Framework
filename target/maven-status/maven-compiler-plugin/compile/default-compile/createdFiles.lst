@@ -48,6 +48,7 @@ com\jwf\JavaWebFramework\assets\Block.class
 com\jwf\JavaWebFramework\js\builder\JSFile.class
 com\jwf\JavaWebFramework\assets\form\OptionBuilder.class
 com\jwf\JavaWebFramework\assets\HeadingBuilder.class
+com\jwf\JavaWebFramework\assets\QuotationBuilder.class
 com\jwf\JavaWebFramework\styling\ID.class
 com\jwf\JavaWebFramework\js\builder\statements\Comment.class
 com\jwf\JavaWebFramework\styling\Attribute.class
@@ -61,6 +62,7 @@ com\jwf\JavaWebFramework\misc\collections\Colours.class
 com\jwf\JavaWebFramework\assets\Image.class
 com\jwf\JavaWebFramework\assets\ImageBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.class
+com\jwf\JavaWebFramework\assets\Quotation.class
 com\jwf\JavaWebFramework\assets\form\FieldSet.class
 com\jwf\JavaWebFramework\assets\form\Button.class
 com\jwf\JavaWebFramework\misc\collections\Formatting.class

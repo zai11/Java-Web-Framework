@@ -75,6 +75,9 @@ public class Paragraph extends Asset {
 		case "superscript":
 			tag = "sup";
 			break;
+		case "quotation":
+			tag = "q";
+			break;
 		default:
 			Logging.LogError("Invalid format: " + format);
 			break;
