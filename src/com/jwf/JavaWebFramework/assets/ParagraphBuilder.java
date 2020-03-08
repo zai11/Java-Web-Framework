@@ -1,6 +1,5 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.assets.form.Form;
 import com.jwf.JavaWebFramework.misc.collections.Formatting;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
@@ -8,9 +7,8 @@ import com.jwf.JavaWebFramework.styling.ID;
 /**
  * A Paragraph Builder - All attributes are set and then the final paragraph is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/General/paragraph.html#ParagraphBuilder">Documentation</a>
- * @see Paragraph
  * @see Asset
- * @see Form
+ * @see Paragraph
  */
 public class ParagraphBuilder extends Builder<Paragraph> {
 
@@ -27,6 +25,11 @@ public class ParagraphBuilder extends Builder<Paragraph> {
 		return this;
 	}
 	
+	/**
+	 * Set the type of formatting for the paragraph.
+	 * @param format	the type of formatting
+	 * @return	the ParagraphBuilder object
+	 */
 	public ParagraphBuilder setFormatting(Formatting format) {
 		this.format = format;
 		return this;

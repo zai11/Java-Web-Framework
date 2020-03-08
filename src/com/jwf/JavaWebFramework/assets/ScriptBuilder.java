@@ -3,7 +3,6 @@ package com.jwf.JavaWebFramework.assets;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jwf.JavaWebFramework.assets.form.Form;
 import com.jwf.JavaWebFramework.js.builder.PrimitiveVariable;
 import com.jwf.JavaWebFramework.js.builder.Statement;
 import com.jwf.JavaWebFramework.js.builder.statements.Assignment;
@@ -19,9 +18,8 @@ import com.jwf.JavaWebFramework.misc.debugging.Logging;
 /**
  * A Script Builder - All attributes are set and then the final script is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/General/scripts.html#ScriptBuilder">Documentation</a>
- * @see Scripts
  * @see Asset
- * @see Form
+ * @see Script
  */
 public class ScriptBuilder extends Builder<Script> {
 

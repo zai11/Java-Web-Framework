@@ -5,7 +5,7 @@ import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Quotation Builder - All attributes are set and then the final quotation block is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/General/quotation.html#QuotationBUilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/General/quotation.html#QuotationBuilder">Documentation</a>
  * @see Asset
  * @see Quotation
  */

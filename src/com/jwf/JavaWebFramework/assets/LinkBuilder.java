@@ -1,16 +1,13 @@
 package com.jwf.JavaWebFramework.assets;
 
-import com.jwf.JavaWebFramework.assets.form.Button;
-import com.jwf.JavaWebFramework.assets.form.Form;
 import com.jwf.JavaWebFramework.styling.Class;
 import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Link Builder - All attributes are set and then the final link is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/General/links.html#ButtonBuilder">Documentation</a>
- * @see Button
+ * See <a href="../../../Documentation/HTML/Assets/General/links.html#LinkBuilder">Documentation</a>
  * @see Asset
- * @see Form
+ * @see Link
  */
 public class LinkBuilder extends Builder<Link> {
 

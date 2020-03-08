@@ -6,8 +6,8 @@ import com.jwf.JavaWebFramework.styling.ID;
 /**
  * An Image Builder - All attributes are set and then the final image is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/Forms/images.html#ImageBuilder">Documentation</a>
- * @see Image
  * @see Asset
+ * @see Image
  */
 public class ImageBuilder extends Builder<Image> {
 

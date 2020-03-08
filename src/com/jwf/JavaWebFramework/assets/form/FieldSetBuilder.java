@@ -11,9 +11,9 @@ import com.jwf.JavaWebFramework.styling.ID;
 /**
  * A FieldSet Builder - All attributes are set and then the final fieldset is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/Forms/buttons.html#FieldSetBuilder">Documentation</a>
- * @see FieldSet
  * @see Asset
  * @see Form
+ * @see FieldSet
  */
 public class FieldSetBuilder extends Builder<FieldSet> {
 

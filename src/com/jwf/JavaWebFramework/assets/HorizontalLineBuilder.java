@@ -3,8 +3,8 @@ package com.jwf.JavaWebFramework.assets;
 /**
  * A Horizontal Line Builder - All attributes are set and then the final horizontal line is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/Forms/horizontal_line.html#HorizontalLineBuilder">Documentation</a>
- * @see HorizontalLine
  * @see Asset
+ * @see HorizontalLine
  */
 public class HorizontalLineBuilder extends Builder<HorizontalLine> {
 

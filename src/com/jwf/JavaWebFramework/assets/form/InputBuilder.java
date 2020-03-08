@@ -8,9 +8,9 @@ import com.jwf.JavaWebFramework.styling.ID;
 /**
  * An Input Builder - All attributes are set and then the final input is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/Forms/inputs.html#InputBuilder">Documentation</a>
- * @see Input
  * @see Asset
  * @see Form
+ * @see Input
  */
 public class InputBuilder extends Builder<Input> {
 	

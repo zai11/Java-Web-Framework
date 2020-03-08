@@ -3,8 +3,8 @@ package com.jwf.JavaWebFramework.assets;
 /**
  * A Line Break Builder - All attributes are set and then the final line break is then constructed.
  * See <a href="../../../Documentation/HTML/Assets/line_break.html#LineBreakBuilder">Documentation</a>
- * @see LineBreak
  * @see Asset
+ * @see LineBreak
  */
 public class LineBreakBuilder extends Builder<LineBreak> {
 
