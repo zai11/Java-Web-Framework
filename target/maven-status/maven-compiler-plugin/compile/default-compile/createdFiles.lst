@@ -25,6 +25,7 @@ com\jwf\JavaWebFramework\assets\CommentBuilder.class
 com\jwf\JavaWebFramework\assets\form\Input.class
 com\jwf\JavaWebFramework\assets\form\LabelBuilder.class
 com\jwf\JavaWebFramework\assets\Builder.class
+com\jwf\JavaWebFramework\assets\IFrame.class
 com\jwf\JavaWebFramework\assets\form\OptionGroupBuilder.class
 com\jwf\JavaWebFramework\js\builder\statements\Conditional.class
 com\jwf\JavaWebFramework\assets\form\Label.class
@@ -32,6 +33,7 @@ com\jwf\JavaWebFramework\main\Page.class
 com\jwf\JavaWebFramework\assets\Paragraph.class
 com\jwf\JavaWebFramework\styling\Rectangle.class
 com\jwf\JavaWebFramework\assets\LinkBuilder.class
+com\jwf\JavaWebFramework\assets\IFrameBuilder.class
 com\jwf\JavaWebFramework\main\JWF.class
 com\jwf\JavaWebFramework\assets\form\SelectBoxBuilder.class
 com\jwf\JavaWebFramework\assets\form\Form.class
