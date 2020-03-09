@@ -23,6 +23,7 @@ public enum Assets {
 	SELECT_BOX,
 	SCRIPT,
 	QUOTATION,
-	IFRAME
+	IFRAME,
+	SPAN
 	
 }
