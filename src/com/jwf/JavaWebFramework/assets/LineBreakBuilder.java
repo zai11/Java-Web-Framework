@@ -2,7 +2,7 @@ package com.jwf.JavaWebFramework.assets;
 
 /**
  * A Line Break Builder - All attributes are set and then the final line break is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/line_break.html#LineBreakBuilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/General/line_breaks.html#LineBreakBuilder">Documentation</a>
  * @see Asset
  * @see LineBreak
  */

@@ -5,7 +5,7 @@ import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * An IFrame Builder - All attributes are set and then the final IFrame is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/General/iframe.html#IFrameBuilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/General/iframes.html#IFrameBuilder">Documentation</a>
  * @see Asset
  * @see IFrame
  */

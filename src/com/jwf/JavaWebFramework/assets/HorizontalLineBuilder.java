@@ -2,7 +2,7 @@ package com.jwf.JavaWebFramework.assets;
 
 /**
  * A Horizontal Line Builder - All attributes are set and then the final horizontal line is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/Forms/horizontal_line.html#HorizontalLineBuilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/General/horizontal_lines.html#HorizontalLineBuilder">Documentation</a>
  * @see Asset
  * @see HorizontalLine
  */

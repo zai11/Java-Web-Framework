@@ -8,7 +8,7 @@ import com.jwf.JavaWebFramework.styling.Class;
 
 /**
  * An IFrame - equivalent to the HTML {@code <iframe>} tags.
- * See <a href="../../Documentation/HTML/Assets/General/iframe.html">Documentation</a>
+ * See <a href="../../Documentation/HTML/Assets/General/iframes.html">Documentation</a>
  * @see Asset
  */
 public class IFrame extends Asset {

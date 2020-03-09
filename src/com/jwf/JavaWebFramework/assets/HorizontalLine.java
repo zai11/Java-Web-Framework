@@ -5,7 +5,7 @@ import com.jwf.JavaWebFramework.misc.debugging.Logging;
 
 /**
  * A horizontal line element - equivalent to the HTML {@code <hr />} elements.
- * See <a href="../../Documentation/HTML/Assets/General/horizontal_line.html">Documentation</a>
+ * See <a href="../../Documentation/HTML/Assets/General/horizontal_lines.html">Documentation</a>
  * @see Asset
  */
 public class HorizontalLine extends Asset {

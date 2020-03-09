@@ -8,7 +8,7 @@ import com.jwf.JavaWebFramework.misc.debugging.Logging;
 import com.jwf.JavaWebFramework.styling.Class;
 /**
  * A quotation - equivalent to the HTML {@code <blockquote>} tags.
- * See <a href="../../Documentation/HTML/Assets/General/paragraphs.html">Documentation</a>
+ * See <a href="../../Documentation/HTML/Assets/General/quotations.html">Documentation</a>
  * @see Asset
  */
 public class Quotation extends Asset {

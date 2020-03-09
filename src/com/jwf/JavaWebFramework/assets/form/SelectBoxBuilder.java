@@ -7,7 +7,7 @@ import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Select Box Builder - All attributes are set and then the final select box is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/Forms/select_box.html#SelectBoxBuilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/Forms/select_boxes.html#SelectBoxBuilder">Documentation</a>
  * 
  * @see Asset
  * @see Form

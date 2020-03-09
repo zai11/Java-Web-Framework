@@ -5,7 +5,7 @@ import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Heading Builder - All attributes are set and then the final heading is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/Forms/headings.html#HeadingBuilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/General/headings.html#HeadingBuilder">Documentation</a>
  * @see Asset
  * @see Heading
  */

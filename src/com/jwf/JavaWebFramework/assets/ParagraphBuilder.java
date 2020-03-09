@@ -6,7 +6,7 @@ import com.jwf.JavaWebFramework.styling.ID;
 
 /**
  * A Paragraph Builder - All attributes are set and then the final paragraph is then constructed.
- * See <a href="../../../Documentation/HTML/Assets/General/paragraph.html#ParagraphBuilder">Documentation</a>
+ * See <a href="../../../Documentation/HTML/Assets/General/paragraphs.html#ParagraphBuilder">Documentation</a>
  * @see Asset
  * @see Paragraph
  */
