@@ -20,6 +20,7 @@ com\jwf\JavaWebFramework\js\builder\statements\CustomStatement.class
 com\jwf\JavaWebFramework\main\SiteConfig.class
 com\jwf\JavaWebFramework\misc\collections\Units.class
 com\jwf\JavaWebFramework\assets\HorizontalLineBuilder.class
+com\jwf\JavaWebFramework\assets\OrderedListBuilder.class
 com\jwf\JavaWebFramework\assets\LineBreak.class
 com\jwf\JavaWebFramework\assets\form\SelectBox.class
 com\jwf\JavaWebFramework\assets\CommentBuilder.class
@@ -38,6 +39,7 @@ com\jwf\JavaWebFramework\assets\IFrameBuilder.class
 com\jwf\JavaWebFramework\main\JWF.class
 com\jwf\JavaWebFramework\assets\form\SelectBoxBuilder.class
 com\jwf\JavaWebFramework\assets\form\Form.class
+com\jwf\JavaWebFramework\assets\OrderedList.class
 com\jwf\JavaWebFramework\js\builder\PrimitiveVariable.class
 com\jwf\JavaWebFramework\assets\form\OptionGroup.class
 com\jwf\JavaWebFramework\js\builder\Statement.class
