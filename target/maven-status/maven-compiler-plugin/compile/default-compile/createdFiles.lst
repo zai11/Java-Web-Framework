@@ -2,6 +2,7 @@ com\jwf\JavaWebFramework\assets\Comment.class
 com\jwf\JavaWebFramework\js\builder\statements\VariableDeclaration.class
 com\jwf\JavaWebFramework\js\builder\statements\Assignment.class
 com\jwf\JavaWebFramework\assets\ScriptBuilder.class
+com\jwf\JavaWebFramework\assets\UnorderedListBuilder.class
 com\jwf\JavaWebFramework\js\builder\JSFileBuilder.class
 com\jwf\JavaWebFramework\assets\ParagraphBuilder.class
 com\jwf\JavaWebFramework\assets\Span.class
@@ -75,5 +76,6 @@ com\jwf\JavaWebFramework\assets\Asset.class
 com\jwf\JavaWebFramework\assets\SpanBuilder.class
 com\jwf\JavaWebFramework\styling\StyleBuilder.class
 com\jwf\JavaWebFramework\assets\form\ButtonBuilder.class
+com\jwf\JavaWebFramework\assets\UnorderedList.class
 com\jwf\JavaWebFramework\misc\ConfigParser.class
 com\jwf\JavaWebFramework\styling\Stylesheet.class
