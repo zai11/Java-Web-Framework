@@ -25,6 +25,7 @@ com\jwf\JavaWebFramework\assets\OrderedListBuilder.class
 com\jwf\JavaWebFramework\assets\LineBreak.class
 com\jwf\JavaWebFramework\assets\form\SelectBox.class
 com\jwf\JavaWebFramework\assets\CommentBuilder.class
+com\jwf\JavaWebFramework\assets\Table.class
 com\jwf\JavaWebFramework\assets\form\Input.class
 com\jwf\JavaWebFramework\assets\form\LabelBuilder.class
 com\jwf\JavaWebFramework\assets\Builder.class
@@ -47,6 +48,7 @@ com\jwf\JavaWebFramework\js\builder\Statement.class
 com\jwf\JavaWebFramework\misc\collections\PseudoClasses.class
 com\jwf\JavaWebFramework\styling\IDList.class
 com\jwf\JavaWebFramework\assets\form\FormBuilder.class
+com\jwf\JavaWebFramework\assets\TableRow.class
 com\jwf\JavaWebFramework\main\Website.class
 com\jwf\JavaWebFramework\styling\ClassList.class
 com\jwf\JavaWebFramework\assets\Heading.class
@@ -70,6 +72,7 @@ com\jwf\JavaWebFramework\assets\ImageBuilder.class
 com\jwf\JavaWebFramework\assets\form\FieldSetBuilder.class
 com\jwf\JavaWebFramework\assets\Quotation.class
 com\jwf\JavaWebFramework\assets\form\FieldSet.class
+com\jwf\JavaWebFramework\assets\TableBuilder.class
 com\jwf\JavaWebFramework\assets\form\Button.class
 com\jwf\JavaWebFramework\misc\collections\Formatting.class
 com\jwf\JavaWebFramework\assets\Asset.class

@@ -25,6 +25,7 @@ public enum Assets {
 	QUOTATION,
 	IFRAME,
 	SPAN,
-	ORDERED_LIST
+	ORDERED_LIST,
+	TABLE
 	
 }
